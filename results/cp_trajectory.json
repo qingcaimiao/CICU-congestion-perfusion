@@ -1,0 +1,41 @@
+{
+ "n": 6942,
+ "table": [
+  {
+   "traj": "Never",
+   "n": 5104,
+   "deaths": 285,
+   "pct": 5.58,
+   "mean_early": 1.14,
+   "mean_late": 1.19
+  },
+  {
+   "traj": "Resolved",
+   "n": 448,
+   "deaths": 37,
+   "pct": 8.26,
+   "mean_early": 3.31,
+   "mean_late": 1.6
+  },
+  {
+   "traj": "Emerging",
+   "n": 740,
+   "deaths": 84,
+   "pct": 11.35,
+   "mean_early": 1.5,
+   "mean_late": 3.48
+  },
+  {
+   "traj": "Persistent",
+   "n": 650,
+   "deaths": 94,
+   "pct": 14.46,
+   "mean_early": 3.59,
+   "mean_late": 3.67
+  }
+ ],
+ "auc_add": [
+  0.6091021421918659,
+  0.6345981061782056
+ ]
+}

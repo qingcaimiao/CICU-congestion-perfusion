@@ -1,0 +1,17 @@
+definition,cell,n,deaths,mortality
+oedema only,dry-warm,26976,1636,6.06
+oedema only,dry-cold,118,31,26.27
+oedema only,wet-warm,569,33,5.8
+oedema only,wet-cold,94,27,28.72
+JVD only,dry-warm,27381,1657,6.05
+JVD only,dry-cold,181,50,27.62
+JVD only,wet-warm,164,12,7.32
+JVD only,wet-cold,31,8,25.81
+crackles only,dry-warm,26895,1622,6.03
+crackles only,dry-cold,109,31,28.44
+crackles only,wet-warm,650,47,7.23
+crackles only,wet-cold,103,27,26.21
+composite (any),dry-warm,26531,1605,6.05
+composite (any),dry-cold,60,15,25.0
+composite (any),wet-warm,1014,64,6.31
+composite (any),wet-cold,152,43,28.29

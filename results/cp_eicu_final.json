@@ -1,0 +1,28 @@
+{
+ "with temperature": {
+  "apparent_auc": 0.87,
+  "external_auc": 0.85,
+  "oe": 0.67,
+  "slope": 0.726,
+  "intercept": -0.987,
+  "n": 1535,
+  "deaths": 108,
+  "epv": 5.7,
+  "n_vars": 19,
+  "mean_pred": 10.52,
+  "obs": 7.04
+ },
+ "temperature excluded": {
+  "apparent_auc": 0.869,
+  "external_auc": 0.856,
+  "oe": 0.65,
+  "slope": 0.756,
+  "intercept": -0.972,
+  "n": 1541,
+  "deaths": 108,
+  "epv": 6.0,
+  "n_vars": 18,
+  "mean_pred": 10.73,
+  "obs": 7.01
+ }
+}

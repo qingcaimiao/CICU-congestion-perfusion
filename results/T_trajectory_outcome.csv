@@ -1,0 +1,5 @@
+traj,n,deaths,pct,mean_early,mean_late
+Never,5104,285,5.58,1.14,1.19
+Resolved,448,37,8.26,3.31,1.6
+Emerging,740,84,11.35,1.5,3.48
+Persistent,650,94,14.46,3.59,3.67

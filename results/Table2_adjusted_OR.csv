@@ -1,0 +1,6 @@
+Variable,OR,95%CI,p
+Wet-warm vs dry-warm,1.63,1.25-2.11,2.46e-04
+Dry-cold vs dry-warm,3.13,2.47-3.96,3.11e-21
+Wet-cold vs dry-warm,4.44,3.12-6.31,1.39e-16
+Oedema grade (per level),1.2,1.11-1.29,1.57e-06
+Prolonged capillary refill,2.95,2.40-3.64,2.48e-24

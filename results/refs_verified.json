@@ -1,0 +1,617 @@
+[
+ {
+  "label": "MIMIC-IV",
+  "epmc": {
+   "title": "MIMIC-IV, a freely accessible electronic health record dataset.",
+   "journal": "Scientific data",
+   "year": "2023",
+   "authors": "Johnson AEW, Bulgarelli L, Shen L, Gayles A, Shammout A, Horng S, Pollard TJ, Hao S, Moody B, Gow B, Lehman LH, Celi LA, Mark RG.",
+   "doi": "10.1038/s41597-022-01899-x",
+   "pmid": "36596836"
+  },
+  "crossref": {
+   "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+   "journal": "Scientific Data",
+   "year": 2023,
+   "first_author": "Johnson Alistair E. W.",
+   "volume": "10",
+   "page": null,
+   "doi": "10.1038/s41597-022-01899-x"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "eICU-CRD",
+  "epmc": {
+   "title": "The eICU Collaborative Research Database, a freely available multi-center database for critical care research.",
+   "journal": "Scientific data",
+   "year": "2018",
+   "authors": "Pollard TJ, Johnson AEW, Raffa JD, Celi LA, Mark RG, Badawi O.",
+   "doi": "10.1038/sdata.2018.178",
+   "pmid": "30204154"
+  },
+  "crossref": {
+   "title": "The eICU Collaborative Research Database, a freely available multi-center database for critical care research",
+   "journal": "Scientific Data",
+   "year": 2018,
+   "first_author": "Pollard Tom J.",
+   "volume": "5",
+   "page": null,
+   "doi": "10.1038/sdata.2018.178"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Nohria-Stevenson profiles",
+  "epmc": null,
+  "crossref": {
+   "err": "HTTP Error 404: Not Found"
+  },
+  "status": "CHECK"
+ },
+ {
+  "label": "ANDROMEDA-SHOCK (CRT)",
+  "epmc": {
+   "title": "Effect of a Resuscitation Strategy Targeting Peripheral Perfusion Status vs Serum Lactate Levels on 28-Day Mortality Among Patients With Septic Shock: The ANDROMEDA-SHOCK Randomized Clinical Trial.",
+   "journal": "JAMA",
+   "year": "2019",
+   "authors": "Hernández G, Ospina-Tascón GA, Damiani LP, Estenssoro E, Dubin A, Hurtado J, Friedman G, Castro R, Alegría L, Teboul JL, Cecconi M, Ferri G, Jibaja M, Pairumani R, Fernández P, Barahona D, Granda-Luna V, Cavalcanti AB, Bakker J, The ANDROMEDA SHOCK Investigators and the Latin America Intensive Care Network (LIVEN), Hernández G, Ospina-Tascón G, Petri Damiani L, Estenssoro E, Dubin A, Hurtado J, Friedman G, Castro R, Alegría L, Teboul JL, Cecconi M, Cecconi M, Ferri G, Jibaja M, Pairumani R, Fernández P, Barahona D, Cavalcanti AB, Bakker J, Hernández G, Alegría L, Ferri G, Rodriguez N, Holger P, Soto N, Pozo M, Bakker J, Cook D, Vincent JL, Rhodes A, Kavanagh BP, Dellinger P, Rietdijk W, Carpio D, Pavéz N, Henriquez E, Bravo S, Valenzuela ED, Vera M, Dreyse J, Oviedo V, Cid MA, Larroulet M, Petruska E, Sarabia C, Gallardo D, Sanchez JE, González H, Arancibia JM, Muñoz A, Ramirez G, Aravena F, Aquevedo A, Zambrano F, Bozinovic M, Valle F, Ramirez M, Rossel V, Muñoz P, Ceballos C, Esveile C, Carmona C, Candia E, Mendoza D, Sanchez A, Ponce D, Ponce D, Lastra J, Nahuelpán B, Fasce F, Luengo C, Medel N, Cortés C, Campassi L, Rubatto P, Horna N, Furche M, Pendino JC, Bettini L, Lovesio C, González MC, Rodruguez J, Canales H, Caminos F, Galletti C, Minoldo E, Aramburu MJ, Olmos D, Nin N, Tenzi J, Quiroga C, Lacuesta P, Gaudín A, Pais R, Silvestre A, Olivera G, Rieppi G, Berrutti D, Ochoa M, Cobos P, Vintimilla F, Ramirez V, Tobar M, García F, Picoita F, Remache N, Granda V, Paredes F, Barzallo E, Garcés P, Guerrero F, Salazar S, Torres G, Tana C, Calahorrano J, Solis F, Torres P, Herrera L, Ornes A, Peréz V, Delgado G, López A, Espinosa E, Moreira J, Salcedo B, Villacres I, Suing J, Lopez M, Gomez L, Toctaquiza G, Cadena Zapata M, Orazabal MA, Pardo Espejo R, Jimenez J, Calderón A, Paredes G, Barberán JL, Moya T, Atehortua H, Sabogal R, Ortiz G, Lara A, Sanchez F, Hernán Portilla A, Dávila H, Mora JA, Calderón LE, Alvarez I, Escobar E, Bejarano A, Bustamante LA, Aldana JL.",
+   "doi": "10.1001/jama.2019.0071",
+   "pmid": "30772908"
+  },
+  "crossref": {
+   "title": "Effect of a Resuscitation Strategy Targeting Peripheral Perfusion Status vs Serum Lactate Levels on 28-Day Mortality Among Patients With Septic Shock",
+   "journal": "JAMA",
+   "year": 2019,
+   "first_author": "Hernández Glenn",
+   "volume": "321",
+   "page": "654",
+   "doi": "10.1001/jama.2019.0071"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "TRIPOD+AI",
+  "epmc": {
+   "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods.",
+   "journal": "BMJ (Clinical research ed.)",
+   "year": "2024",
+   "authors": "Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B, Ghassemi M, Liu X, Reitsma JB, van Smeden M, Boulesteix AL, Camaradou JC, Celi LA, Denaxas S, Denniston AK, Glocker B, Golub RM, Harvey H, Heinze G, Hoffman MM, Kengne AP, Lam E, Lee N, Loder EW, Maier-Hein L, Mateen BA, McCradden MD, Oakden-Rayner L, Ordish J, Parnell R, Rose S, Singh K, Wynants L, Logullo P.",
+   "doi": "10.1136/bmj-2023-078378",
+   "pmid": "38626948"
+  },
+  "crossref": {
+   "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+   "journal": "BMJ",
+   "year": 2024,
+   "first_author": "Collins Gary S",
+   "volume": "385",
+   "page": "e078378",
+   "doi": "10.1136/bmj-2023-078378"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Medicina 2026 congestion-perfusion",
+  "epmc": {
+   "title": "Congestion-Perfusion Phenotypes and In-Hospital Mortality in Acute Heart Failure: Phenotype-Specific Prognostic Markers and Right-Heart Involvement.",
+   "journal": "Medicina (Kaunas, Lithuania)",
+   "year": "2026",
+   "authors": "Diaconu M, Popescu DC, Țînț D, Nechita AC.",
+   "doi": "10.3390/medicina62071422",
+   "pmid": "42512964"
+  },
+  "crossref": {
+   "title": "Congestion–Perfusion Phenotypes and In-Hospital Mortality in Acute Heart Failure: Phenotype-Specific Prognostic Markers and Right-Heart Involvement",
+   "journal": "Medicina",
+   "year": 2026,
+   "first_author": "Diaconu Mara",
+   "volume": "62",
+   "page": "1422",
+   "doi": "10.3390/medicina62071422"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "HELP-HF congestion patterns",
+  "epmc": {
+   "title": "Clinical congestion patterns in patients with advanced heart failure: an analysis of the HELP-HF Registry.",
+   "journal": "Journal of cardiovascular medicine (Hagerstown, Md.)",
+   "year": "2026",
+   "authors": "Riccardi M, Cozzani G, Lombardi CM, Chiarito M, Stolfo D, Baldetti L, Tomasoni D, Inciardi RM, Villaschi A, Loiacono F, Maccallini M, Gasparini G, Contessi S, Cocianni D, Perotto M, Barone G, Merlo M, Cappelletti AM, Scandroglio AM, Sinagra G, Pini D, Adamo M, Metra M, Pagnesi M.",
+   "doi": "10.2459/jcm.0000000000001907",
+   "pmid": "42485116"
+  },
+  "crossref": {
+   "title": "Clinical congestion patterns in patients with advanced heart failure: an analysis of the HELP-HF Registry",
+   "journal": "Journal of Cardiovascular Medicine",
+   "year": 2026,
+   "first_author": "Riccardi Mauro",
+   "volume": "27",
+   "page": "513-523",
+   "doi": "10.2459/jcm.0000000000001907"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "ESC HF 2026 beyond warm and wet",
+  "epmc": {
+   "title": "Beyond 'warm and wet': refining congestion phenotypes within the Nohria-Stevenson framework in acute heart failure.",
+   "journal": "ESC heart failure",
+   "year": "2026",
+   "authors": "Urtiga R, Zarpelon LFB.",
+   "doi": "10.1093/eschf/xvag226",
+   "pmid": "42657639"
+  },
+  "crossref": {
+   "title": "Beyond ‘warm and wet’: refining congestion phenotypes within the Nohria–Stevenson framework in acute heart failure",
+   "journal": "ESC Heart Failure",
+   "year": 2026,
+   "first_author": "Urtiga Rebecca",
+   "volume": "13",
+   "page": null,
+   "doi": "10.1093/eschf/xvag226"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "JAMA 2026 volume overload (Rational Clinical Exam)",
+  "epmc": {
+   "title": "Does This Patient Have Volume Overload?: The Rational Clinical Examination.",
+   "journal": "JAMA",
+   "year": "2026",
+   "authors": "Drum B, La Course B, Kelly M, York A, Worrall E, Martins J, Johnson S, Liles EA.",
+   "doi": "10.1001/jama.2026.0446",
+   "pmid": "41729549"
+  },
+  "crossref": {
+   "title": "Does This Patient Have Volume Overload?",
+   "journal": "JAMA",
+   "year": 2026,
+   "first_author": "Drum Benjamin",
+   "volume": "335",
+   "page": "1159",
+   "doi": "10.1001/jama.2026.0446"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Gao 2025 CICU deterioration",
+  "epmc": {
+   "title": "Machine learning-based early warning system for hemodynamic deterioration in cardiovascular ICU patients: a bidirectional cross-validation study.",
+   "journal": "Frontiers in cardiovascular medicine",
+   "year": "2025",
+   "authors": "Gao S, Zhang Y, Deng M, Liu H, Xu W, Luo M, Tian Y, Zhang B.",
+   "doi": "10.3389/fcvm.2025.1694001",
+   "pmid": "41647804"
+  },
+  "crossref": {
+   "title": "Machine learning-based early warning system for hemodynamic deterioration in cardiovascular ICU patients: a bidirectional cross-validation study",
+   "journal": "Frontiers in Cardiovascular Medicine",
+   "year": 2026,
+   "first_author": "Gao Shicheng",
+   "volume": "12",
+   "page": null,
+   "doi": "10.3389/fcvm.2025.1694001"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Hu 2024 CShock",
+  "epmc": {
+   "title": "Development and external validation of a dynamic risk score for early prediction of cardiogenic shock in cardiac intensive care units using machine learning.",
+   "journal": "European heart journal. Acute cardiovascular care",
+   "year": "2024",
+   "authors": "Hu Y, Lui A, Goldstein M, Sudarshan M, Tinsay A, Tsui C, Maidman SD, Medamana J, Jethani N, Puli A, Nguy V, Aphinyanaphongs Y, Kiefer N, Smilowitz NR, Horowitz J, Ahuja T, Fishman GI, Hochman J, Katz S, Bernard S, Ranganath R.",
+   "doi": "10.1093/ehjacc/zuae037",
+   "pmid": "38518758"
+  },
+  "crossref": {
+   "title": "Development and external validation of a dynamic risk score for early prediction of cardiogenic shock in cardiac intensive care units using machine learning",
+   "journal": "European Heart Journal: Acute Cardiovascular Care",
+   "year": 2024,
+   "first_author": "Hu Yuxuan",
+   "volume": "13",
+   "page": "472-480",
+   "doi": "10.1093/ehjacc/zuae037"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Bohm 2025 STOP-SHOCK",
+  "epmc": {
+   "title": "Machine learning-based scoring system to predict cardiogenic shock in acute coronary syndrome.",
+   "journal": "European heart journal. Digital health",
+   "year": "2025",
+   "authors": "Böhm A, Segev A, Jajcay N, Krychtiuk KA, Tavazzi G, Spartalis M, Kollarova M, Berta I, Jankova J, Guerra F, Pogran E, Remak A, Jarakovic M, Sebenova Jerigova V, Petrikova K, Matetzky S, Skurk C, Huber K, Bezak B.",
+   "doi": "10.1093/ehjdh/ztaf002",
+   "pmid": "40110217"
+  },
+  "crossref": {
+   "title": "Machine learning-based scoring system to predict cardiogenic shock in acute coronary syndrome",
+   "journal": "European Heart Journal - Digital Health",
+   "year": 2025,
+   "first_author": "Böhm Allan",
+   "volume": "6",
+   "page": "240-251",
+   "doi": "10.1093/ehjdh/ztaf002"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "PADS transportability",
+  "epmc": {
+   "title": "Generalization, Cross-ICU Transfer, and Explainability of a Mortality and Time-to-Discharge Framework for the Intensive Care Unit.",
+   "journal": "Journal of clinical medicine",
+   "year": "2026",
+   "authors": "Pardo À, Gómez J, Berrueta J, García-Martínez A, Orts P, Manrique S, Rodríguez A, Bodí M.",
+   "doi": "10.3390/jcm15186957",
+   "pmid": "42795730"
+  },
+  "crossref": {
+   "title": "Generalization, Cross-ICU Transfer, and Explainability of a Mortality and Time-to-Discharge Framework for the Intensive Care Unit",
+   "journal": "Journal of Clinical Medicine",
+   "year": 2026,
+   "first_author": "Pardo Àlex",
+   "volume": "15",
+   "page": "6957",
+   "doi": "10.3390/jcm15186957"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "CRT cross-database preprint",
+  "epmc": {
+   "title": "Operational Heterogeneity of Capillary Refill Time Across Two Public ICU Databases: A Methodological Analysis",
+   "journal": null,
+   "year": "2026",
+   "authors": "Xia X, Xie Z.",
+   "doi": "10.64898/2026.09.29.26364303",
+   "pmid": null
+  },
+  "crossref": {
+   "title": "Operational Heterogeneity of Capillary Refill Time Across Two Public ICU Databases: A Methodological Analysis",
+   "journal": "",
+   "year": 2026,
+   "first_author": "Xia Xue",
+   "volume": null,
+   "page": null,
+   "doi": "10.64898/2026.09.29.26364303"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "CICU ML score (EHJ Digital Health)",
+  "epmc_candidates": [
+   {
+    "title": "Machine learning score to predict in-hospital outcomes in patients hospitalized in cardiac intensive care unit.",
+    "journal": "European heart journal. Digital health",
+    "year": "2025",
+    "authors": "Weizman O, Hamzi K, Henry P, Schurtz G, Hauguel-Moreau M, Trimaille A, Bedossa M, Dib JC, Attou S, Boukertouta T, Boccara F, Pommier T, Lim P, Bochaton T, Millischer D, Merat B, Picard F, Grinberg N, Sulman D, Pasdeloup B, El Ouahidi Y, Gonçalves T, Vicaut E, Dillinger JG, Toupin S, Pezel T, ADDICT-ICCU Investigators .",
+    "doi": "10.1093/ehjdh/ztae098",
+    "pmid": "40110223"
+   }
+  ],
+  "crossref": {
+   "title": "Machine learning score to predict in-hospital outcomes in patients hospitalized in cardiac intensive care unit",
+   "journal": "European Heart Journal - Digital Health",
+   "year": 2024,
+   "first_author": "Weizman Orianne",
+   "volume": "6",
+   "page": "218-227",
+   "doi": "10.1093/ehjdh/ztae098"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Heart failure pLOS model (EJCN 2025)",
+  "epmc_candidates": [
+   {
+    "title": "Patient and Management Variables Associated With Survival After Postcardiotomy Extracorporeal Membrane Oxygenation in Adults: The PELS-1 Multicenter Cohort Study.",
+    "journal": "Journal of the American Heart Association",
+    "year": "2023",
+    "authors": "Mariani S, Heuts S, van Bussel BCT, Di Mauro M, Wiedemann D, Saeed D, Pozzi M, Loforte A, Boeken U, Samalavicius R, Bounader K, Hou X, Bunge JJH, Buscher H, Salazar L, Meyns B, Herr D, Matteucci MLS, Sponga S, MacLaren G, Russo C, Russo C, Formica F, Sakiyalak P, Fiore A, Camboni D, Raffa GM, Diaz R, Wang IW, Jung JS, Belohlavek J, Pellegrino V, Bianchi G, Pettinari M, Barbone A, Garcia JP, Shekar K, Whitman GJR, Lorusso R, PELS‐1 Investigators *.",
+    "doi": "10.1161/jaha.123.029609",
+    "pmid": "37421269"
+   },
+   {
+    "title": "Oxygen: when is more the enemy of good?",
+    "journal": "Intensive care medicine",
+    "year": "2011",
+    "authors": "Branson RD, Robinson BR.",
+    "doi": "10.1007/s00134-010-2034-y",
+    "pmid": "20878145"
+   },
+   {
+    "title": "ESICM LIVES 2018 : Paris, France. 20-24 October 2018.",
+    "journal": "Intensive care medicine experimental",
+    "year": "2018",
+    "authors": null,
+    "doi": "10.1186/s40635-018-0201-6",
+    "pmid": "30341496"
+   }
+  ],
+  "crossref": {
+   "title": "Patient and Management Variables Associated With Survival After Postcardiotomy Extracorporeal Membrane Oxygenation in Adults: The PELS‐1 Multicenter Cohort Study",
+   "journal": "Journal of the American Heart Association",
+   "year": 2023,
+   "first_author": "Mariani Silvia",
+   "volume": "12",
+   "page": null,
+   "doi": "10.1161/jaha.123.029609"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Nohria JAMA 2002 profiles",
+  "epmc_candidates": [
+   {
+    "title": "Medical management of advanced heart failure.",
+    "journal": "JAMA",
+    "year": "2002",
+    "authors": "Nohria A, Lewis E, Stevenson LW.",
+    "doi": "10.1001/jama.287.5.628",
+    "pmid": "11829703"
+   }
+  ],
+  "crossref": {
+   "title": "Medical Management of Advanced Heart Failure",
+   "journal": "JAMA",
+   "year": 2002,
+   "first_author": "Nohria Anju",
+   "volume": "287",
+   "page": "628",
+   "doi": "10.1001/jama.287.5.628"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "VExUS",
+  "epmc_candidates": [
+   {
+    "title": "Quantifying systemic congestion with Point-Of-Care ultrasound: development of the venous excess ultrasound grading system.",
+    "journal": "The ultrasound journal",
+    "year": "2020",
+    "authors": "Beaubien-Souligny W, Rola P, Haycock K, Bouchard J, Lamarche Y, Spiegel R, Denault AY.",
+    "doi": "10.1186/s13089-020-00163-w",
+    "pmid": "32270297"
+   },
+   {
+    "title": "Clinical applications of the venous excess ultrasound (VExUS) score: conceptual review and case series.",
+    "journal": "The ultrasound journal",
+    "year": "2021",
+    "authors": "Rola P, Miralles-Aguiar F, Argaiz E, Beaubien-Souligny W, Haycock K, Karimov T, Dinh VA, Spiegel R.",
+    "doi": "10.1186/s13089-021-00232-8",
+    "pmid": "34146184"
+   },
+   {
+    "title": "Combination of Inferior Vena Cava Diameter, Hepatic Venous Flow, and Portal Vein Pulsatility Index: Venous Excess Ultrasound Score (VEXUS Score) in Predicting Acute Kidney Injury in Patients with Cardiorenal Syndrome: A Prospective Cohort Study.",
+    "journal": "Indian journal of critical care medicine : peer-reviewed, official publication of Indian Society of Critical Care Medicine",
+    "year": "2020",
+    "authors": "Bhardwaj V, Vikneswaran G, Rola P, Raju S, Bhat RS, Jayakumar A, Alva A.",
+    "doi": "10.5005/jp-journals-10071-23570",
+    "pmid": "33132560"
+   }
+  ],
+  "crossref": {
+   "title": "Quantifying systemic congestion with Point-Of-Care ultrasound: development of the venous excess ultrasound grading system",
+   "journal": "The Ultrasound Journal",
+   "year": 2020,
+   "first_author": "Beaubien-Souligny William",
+   "volume": "12",
+   "page": null,
+   "doi": "10.1186/s13089-020-00163-w"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "CRT septic shock review",
+  "epmc_candidates": [
+   {
+    "title": "Capillary refill time exploration during septic shock.",
+    "journal": "Intensive care medicine",
+    "year": "2014",
+    "authors": "Ait-Oufella H, Bige N, Boelle PY, Pichereau C, Alves M, Bertinchamp R, Baudel JL, Galbois A, Maury E, Guidet B.",
+    "doi": "10.1007/s00134-014-3326-4",
+    "pmid": "24811942"
+   },
+   {
+    "title": "Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock: The ANDROMEDA-SHOCK-2 Randomized Clinical Trial.",
+    "journal": "JAMA",
+    "year": "2025",
+    "authors": "ANDROMEDA-SHOCK-2 Investigators for the ANDROMEDA Research Network, Spanish Society of Anesthesiology, Reanimation and Pain Therapy (SEDAR), and Latin American Intensive Care Network (LIVEN), Hernandez G, Ospina-Tascón GA, Kattan E, Ibarra-Estrada M, Ramasco F, Orozco N, Ramos K, Aldana JL, Ferri G, Hamzaoui O, De Backer D, Teboul JL, Vieillard-Baron A, Petri Damiani L, García-Gallardo GA, Morales S, Carmona Garcia P, Mendez R, Hernandez-Gilsoul T, Pérez-Nieto OR, Olea Vielba C, Ramos S, Dominguez D, Bruna M, David S, Wendel-Garcia PD, Galiana-Ivars M, Myatra SN, Messina A, Cecconi M, Pozo M, Amthauer M, Higuera E, Al Duhalib Z, Rico-Feijoo J, Ferrer-Gómez C, Pérez-Carbonell A, Martinez-Castro S, Redondo Calvo FJ, Vives M, Sanchez HF, Bilbao I, Fernandez P, Al-Fares A, Benitez-Cano A, Gonzalez C, Reyes LF, Rodriguez-Guillen JH, Cristino AV, Pendino JC, Ortiz G, Alonso-Gonzalez MC, Murias G, Aguirre-Ávalos G, Hernández L, Calderón Barajas ZA, Zarragoikoetxea I, Monnet X, Goury A, Mendonça Dos Santos T, Vallecilla L, Martins de Lima L, Sady E, Alegria L, Ostermann M, Bakker J, Biasi Cavalcanti A.",
+    "doi": "10.1001/jama.2025.20402",
+    "pmid": "41159835"
+   },
+   {
+    "title": "A lactate-targeted resuscitation strategy may be associated with higher mortality in patients with septic shock and normal capillary refill time: a post hoc analysis of the ANDROMEDA-SHOCK study.",
+    "journal": "Annals of intensive care",
+    "year": "2020",
+    "authors": "Kattan E, Hernández G, Ospina-Tascón G, Valenzuela ED, Bakker J, Castro R, ANDROMEDA-SHOCK Study Investigators and the Latin America Intensive Care Network (LIVEN).",
+    "doi": "10.1186/s13613-020-00732-1",
+    "pmid": "32845407"
+   }
+  ],
+  "crossref": {
+   "title": "Capillary refill time exploration during septic shock",
+   "journal": "Intensive Care Medicine",
+   "year": 2014,
+   "first_author": "Ait-Oufella H.",
+   "volume": "40",
+   "page": "958-964",
+   "doi": "10.1007/s00134-014-3326-4"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "CICU case mix / critical care cardiology",
+  "epmc_candidates": [
+   {
+    "title": "Evolution of critical care cardiology: transformation of the cardiovascular intensive care unit and the emerging need for new medical staffing and training models: a scientific statement from the American Heart Association.",
+    "journal": "Circulation",
+    "year": "2012",
+    "authors": "Morrow DA, Fang JC, Fintel DJ, Granger CB, Katz JN, Kushner FG, Kuvin JT, Lopez-Sendon J, McAreavey D, Nallamothu B, Page RL, Parrillo JE, Peterson PN, Winkelman C, American Heart Association Council on Cardiopulmonary, Critical Care, Perioperative and Resuscitation, Council on Clinical Cardiology, Council on Cardiovascular Nursing, and Council on Quality of Care and Outcomes Research.",
+    "doi": "10.1161/cir.0b013e31826890b0",
+    "pmid": "22893607"
+   },
+   {
+    "title": "The Genesis, Maturation, and Future of Critical Care Cardiology.",
+    "journal": "Journal of the American College of Cardiology",
+    "year": "2016",
+    "authors": "Katz JN, Minder M, Olenchock B, Price S, Goldfarb M, Washam JB, Barnett CF, Newby LK, van Diepen S.",
+    "doi": "10.1016/j.jacc.2016.04.036",
+    "pmid": "27364053"
+   },
+   {
+    "title": "Organization and staffing practices in US cardiac intensive care units: a survey on behalf of the American Heart Association Writing Group on the Evolution of Critical Care Cardiology.",
+    "journal": "European heart journal. Acute cardiovascular care",
+    "year": "2013",
+    "authors": "O'Malley RG, Olenchock B, Bohula-May E, Barnett C, Fintel DJ, Granger CB, Katz JN, Kontos MC, Kuvin JT, Murphy SA, Parrillo JE, Morrow DA.",
+    "doi": "10.1177/2048872612472063",
+    "pmid": "24062928"
+   }
+  ],
+  "crossref": {
+   "title": "Evolution of Critical Care Cardiology: Transformation of the Cardiovascular Intensive Care Unit and the Emerging Need for New Medical Staffing and Training Models",
+   "journal": "Circulation",
+   "year": 2012,
+   "first_author": "Morrow David A.",
+   "volume": "126",
+   "page": "1408-1428",
+   "doi": "10.1161/cir.0b013e31826890b0"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Diuretic response AHF",
+  "epmc_candidates": [
+   {
+    "title": "Diuretic response in acute heart failure: clinical characteristics and prognostic significance.",
+    "journal": "European heart journal",
+    "year": "2014",
+    "authors": "Valente MA, Voors AA, Damman K, Van Veldhuisen DJ, Massie BM, O'Connor CM, Metra M, Ponikowski P, Teerlink JR, Cotter G, Davison B, Cleland JG, Givertz MM, Bloomfield DM, Fiuzat M, Dittrich HC, Hillege HL.",
+    "doi": "10.1093/eurheartj/ehu065",
+    "pmid": "24585267"
+   },
+   {
+    "title": "Diuretic response in acute heart failure-pathophysiology, evaluation, and therapy.",
+    "journal": "Nature reviews. Cardiology",
+    "year": "2015",
+    "authors": "ter Maaten JM, Valente MA, Damman K, Hillege HL, Navis G, Voors AA.",
+    "doi": "10.1038/nrcardio.2014.215",
+    "pmid": "25560378"
+   },
+   {
+    "title": "Diuretic response in acute heart failure-an analysis from ASCEND-HF.",
+    "journal": "American heart journal",
+    "year": "2015",
+    "authors": "ter Maaten JM, Dunning AM, Valente MA, Damman K, Ezekowitz JA, Califf RM, Starling RC, van der Meer P, O'Connor CM, Schulte PJ, Testani JM, Hernandez AF, Tang WH, Voors AA.",
+    "doi": "10.1016/j.ahj.2015.05.003",
+    "pmid": "26299229"
+   }
+  ],
+  "crossref": {
+   "title": "Diuretic response in acute heart failure: clinical characteristics and prognostic significance",
+   "journal": "European Heart Journal",
+   "year": 2014,
+   "first_author": "Valente M. A. E.",
+   "volume": "35",
+   "page": "1284-1293",
+   "doi": "10.1093/eurheartj/ehu065"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Fluid balance ICU mortality",
+  "epmc_candidates": [
+   {
+    "title": "Fluid balance and mortality in critically ill patients with acute kidney injury: a multicenter prospective epidemiological study.",
+    "journal": "Critical care (London, England)",
+    "year": "2015",
+    "authors": "Wang N, Jiang L, Zhu B, Wen Y, Xi XM, Beijing Acute Kidney Injury Trial (BAKIT) Workgroup.",
+    "doi": "10.1186/s13054-015-1085-4",
+    "pmid": "26494153"
+   },
+   {
+    "title": "Impact of hyperhydration on the mortality risk in critically ill patients admitted in intensive care units: comparison between bioelectrical impedance vector analysis and cumulative fluid balance recording.",
+    "journal": "Critical care (London, England)",
+    "year": "2016",
+    "authors": "Samoni S, Vigo V, Reséndiz LI, Villa G, De Rosa S, Nalesso F, Ferrari F, Meola M, Brendolan A, Malacarne P, Forfori F, Bonato R, Donadio C, Ronco C.",
+    "doi": "10.1186/s13054-016-1269-6",
+    "pmid": "27060079"
+   },
+   {
+    "title": "The impact of fluid balance on diagnosis, staging and prediction of mortality in critically ill patients with acute kidney injury.",
+    "journal": "Journal of nephrology",
+    "year": "2016",
+    "authors": "Thongprayoon C, Cheungpasitporn W, Srivali N, Ungprasert P, Kittanamongkolchai W, Kashani K.",
+    "doi": "10.1007/s40620-015-0211-3",
+    "pmid": "26012379"
+   }
+  ],
+  "crossref": {
+   "title": "Fluid balance and mortality in critically ill patients with acute kidney injury: a multicenter prospective epidemiological study",
+   "journal": "Critical Care",
+   "year": 2015,
+   "first_author": "Wang Na",
+   "volume": "19",
+   "page": null,
+   "doi": "10.1186/s13054-015-1085-4"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Oedema prognosis heart failure",
+  "epmc_candidates": [
+   {
+    "title": "Acute pulmonary edema in patients with decompensated heart failure. Role of underlying cardiopathy on the prognosis.",
+    "journal": "International journal of cardiology",
+    "year": "2007",
+    "authors": "Grigorian Shamagian L, Roman AV, Ramos PM, Acuña JM, Veloso PR, Gonzalez-Juanatey JR.",
+    "doi": "10.1016/j.ijcard.2006.08.110",
+    "pmid": "17141892"
+   }
+  ],
+  "crossref": {
+   "title": "Acute pulmonary edema in patients with decompensated heart failure. Role of underlying cardiopathy on the prognosis",
+   "journal": "International Journal of Cardiology",
+   "year": 2007,
+   "first_author": "Shamagian Lilian Grigorian",
+   "volume": "121",
+   "page": "302-305",
+   "doi": "10.1016/j.ijcard.2006.08.110"
+  },
+  "status": "OK"
+ },
+ {
+  "label": "Physical exam HF congestion",
+  "epmc_candidates": [
+   {
+    "title": "Prognostic Implications of Congestion on Physical Examination Among Contemporary Patients With Heart Failure and Reduced Ejection Fraction: PARADIGM-HF.",
+    "journal": "Circulation",
+    "year": "2019",
+    "authors": "Selvaraj S, Claggett B, Pozzi A, McMurray JJV, Jhund PS, Packer M, Desai AS, Lewis EF, Vaduganathan M, Lefkowitz MP, Rouleau JL, Shi VC, Zile MR, Swedberg K, Solomon SD.",
+    "doi": "10.1161/circulationaha.119.039920",
+    "pmid": "31510768"
+   },
+   {
+    "title": "Temporal Trends and Prognosis of Physical Examination Findings in Patients With Acute Decompensated Heart Failure: The ARIC Study Community Surveillance.",
+    "journal": "Circulation. Heart failure",
+    "year": "2021",
+    "authors": "Kolupoti A, Fudim M, Pandey A, Kucharska-Newton A, Hall ME, Vaduganathan M, Mentz RJ, Caughey MC.",
+    "doi": "10.1161/circheartfailure.121.008403",
+    "pmid": "34702047"
+   }
+  ],
+  "crossref": {
+   "title": "Prognostic Implications of Congestion on Physical Examination Among Contemporary Patients With Heart Failure and Reduced Ejection Fraction",
+   "journal": "Circulation",
+   "year": 2019,
+   "first_author": "Selvaraj Senthil",
+   "volume": "140",
+   "page": "1369-1379",
+   "doi": "10.1161/circulationaha.119.039920"
+  },
+  "status": "OK"
+ }
+]

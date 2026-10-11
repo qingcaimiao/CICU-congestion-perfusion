@@ -1,0 +1,21 @@
+# --- 行级数据：MIMIC-IV / eICU-CRD 数据使用协议禁止再分发 ---
+*.parquet
+*.csv.gz
+*.dta
+*.sav
+*.rds
+*.npy
+*.npz
+*.pkl
+*.h5
+*.feather
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+*.log
+*.docx
+*.tif

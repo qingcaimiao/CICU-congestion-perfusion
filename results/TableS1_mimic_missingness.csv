@@ -1,0 +1,22 @@
+Covariate,Missing
+"temp_mean (screened, not in model)",8.9
+adm_weight,4.0
+glu_max,1.6
+k_max,0.7
+wbc_max,0.7
+hgb_min,0.7
+plt_min,0.6
+na_min,0.5
+cr_max,0.4
+map_min,0.4
+hco3_min,0.4
+cl_min,0.4
+sbp_min,0.4
+bun_max,0.4
+spo2_min,0.1
+rr_max,0.1
+age,0.0
+hr_min,0.0
+hr_max,0.0
+oedema grade,0.0
+capillary refill,0.0

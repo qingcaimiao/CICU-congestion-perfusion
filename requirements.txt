@@ -1,0 +1,10 @@
+# Exact versions used for the submitted manuscript (Python 3.13.12)
+pandas==2.3.3
+numpy==2.5.3
+statsmodels==0.15.0
+scikit-learn==1.9.1
+shap==0.52.0
+scipy==1.18.1
+duckdb==1.5.5
+matplotlib==3.11.2
+Pillow==11.3.0

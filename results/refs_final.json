@@ -1,0 +1,122 @@
+{
+ "MIMIC-IV": {
+  "doi": "10.1038/s41597-022-01899-x",
+  "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+  "citation": "Johnson AEW, Bulgarelli L, Shen L, Gayles A, Shammout A, Horng S et al.. MIMIC-IV, a freely accessible electronic health record dataset. Scientific Data. 2023;10:. doi:10.1038/s41597-022-01899-x PMID:36596836"
+ },
+ "eICU": {
+  "doi": "10.1038/sdata.2018.178",
+  "title": "The eICU Collaborative Research Database, a freely available multi-center database for critical care research",
+  "citation": "Pollard TJ, Johnson AEW, Raffa JD, Celi LA, Mark RG, Badawi O. The eICU Collaborative Research Database, a freely available multi-center database for critical care research. Scientific Data. 2018;5:. doi:10.1038/sdata.2018.178 PMID:30204154"
+ },
+ "Nohria 2002": {
+  "doi": "10.1001/jama.287.5.628",
+  "title": "Medical Management of Advanced Heart Failure",
+  "citation": "Nohria A. Medical Management of Advanced Heart Failure. JAMA. 2002;287:628. doi:10.1001/jama.287.5.628 PMID:11829703"
+ },
+ "Circ 2019 PE congestion": {
+  "doi": "10.1161/circulationaha.119.039920",
+  "title": "Prognostic Implications of Congestion on Physical Examination Among Contemporary Patients With Heart Failure and Reduced Ejection Fraction",
+  "citation": "Selvaraj S, Claggett B, Pozzi A, McMurray JJ, Jhund PS, Packer M et al.. Prognostic Implications of Congestion on Physical Examination Among Contemporary Patients With Heart Failure and Reduced Ejection Fraction. Circulation. 2019;140:1369-1379. doi:10.1161/circulationaha.119.039920 PMID:31510768"
+ },
+ "CircHF 2021 PE trends": {
+  "doi": "10.1161/circheartfailure.121.008403",
+  "title": "Temporal Trends and Prognosis of Physical Examination Findings in Patients With Acute Decompensated Heart Failure: The ARIC Study Community Surveillance",
+  "citation": "Kolupoti A, Fudim M, Pandey A, Kucharska-Newton A, Hall ME, Vaduganathan M et al.. Temporal Trends and Prognosis of Physical Examination Findings in Patients With Acute Decompensated Heart Failure: The ARIC Study Community Surveillance. Circulation: Heart Failure. 2021;14:. doi:10.1161/circheartfailure.121.008403 PMID:34702047"
+ },
+ "JAMA 2026 volume overload": {
+  "doi": "10.1001/jama.2026.0446",
+  "title": "Does This Patient Have Volume Overload?",
+  "citation": "Drum B, La Course B, Kelly M, York A, Worrall E, Martins J et al.. Does This Patient Have Volume Overload?. JAMA. 2026;335:1159. doi:10.1001/jama.2026.0446 PMID:41729549"
+ },
+ "Medicina 2026 C-P": {
+  "doi": "10.3390/medicina62071422",
+  "title": "Congestion–Perfusion Phenotypes and In-Hospital Mortality in Acute Heart Failure: Phenotype-Specific Prognostic Markers and Right-Heart Involvement",
+  "citation": "Diaconu M, Popescu DC, Țînț D, Nechita AC. Congestion–Perfusion Phenotypes and In-Hospital Mortality in Acute Heart Failure: Phenotype-Specific Prognostic Markers and Right-Heart Involvement. Medicina. 2026;62:1422. doi:10.3390/medicina62071422 PMID:42512964"
+ },
+ "HELP-HF 2026": {
+  "doi": "10.2459/jcm.0000000000001907",
+  "title": "Clinical congestion patterns in patients with advanced heart failure: an analysis of the HELP-HF Registry",
+  "citation": "Riccardi M, Cozzani G, Lombardi CM, Chiarito M, Stolfo D, Baldetti L et al.. Clinical congestion patterns in patients with advanced heart failure: an analysis of the HELP-HF Registry. Journal of Cardiovascular Medicine. 2026;27:513-523. doi:10.2459/jcm.0000000000001907 PMID:42485116"
+ },
+ "ESC HF 2026": {
+  "doi": "10.1093/eschf/xvag226",
+  "title": "Beyond ‘warm and wet’: refining congestion phenotypes within the Nohria–Stevenson framework in acute heart failure",
+  "citation": "Urtiga R, Zarpelon LFB. Beyond ‘warm and wet’: refining congestion phenotypes within the Nohria–Stevenson framework in acute heart failure. ESC Heart Failure. 2026;13:. doi:10.1093/eschf/xvag226 PMID:42657639"
+ },
+ "CRT ICM 2014": {
+  "doi": "10.1007/s00134-014-3326-4",
+  "title": "Capillary refill time exploration during septic shock",
+  "citation": "Ait-Oufella H, Bige N, Boelle PY, Pichereau C, Alves M, Bertinchamp R et al.. Capillary refill time exploration during septic shock. Intensive Care Medicine. 2014;40:958-964. doi:10.1007/s00134-014-3326-4 PMID:24811942"
+ },
+ "ANDROMEDA JAMA 2019": {
+  "doi": "10.1001/jama.2019.0071",
+  "title": "Effect of a Resuscitation Strategy Targeting Peripheral Perfusion Status vs Serum Lactate Levels on 28-Day Mortality Among Patients With Septic Shock",
+  "citation": "Hernández G, Ospina-Tascón GA, Damiani LP, Estenssoro E, Dubin A, Hurtado J et al.. Effect of a Resuscitation Strategy Targeting Peripheral Perfusion Status vs Serum Lactate Levels on 28-Day Mortality Among Patients With Septic Shock. JAMA. 2019;321:654. doi:10.1001/jama.2019.0071 PMID:30772908"
+ },
+ "VExUS USJ 2020": {
+  "doi": "10.1186/s13089-020-00163-w",
+  "title": "Quantifying systemic congestion with Point-Of-Care ultrasound: development of the venous excess ultrasound grading system",
+  "citation": "Beaubien-Souligny W, Rola P, Haycock K, Bouchard J, Lamarche Y, Spiegel R et al.. Quantifying systemic congestion with Point-Of-Care ultrasound: development of the venous excess ultrasound grading system. The Ultrasound Journal. 2020;12:. doi:10.1186/s13089-020-00163-w PMID:32270297"
+ },
+ "Gao 2025": {
+  "doi": "10.3389/fcvm.2025.1694001",
+  "title": "Machine learning-based early warning system for hemodynamic deterioration in cardiovascular ICU patients: a bidirectional cross-validation study",
+  "citation": "Gao S, Zhang Y, Deng M, Liu H, Xu W, Luo M et al.. Machine learning-based early warning system for hemodynamic deterioration in cardiovascular ICU patients: a bidirectional cross-validation study. Frontiers in Cardiovascular Medicine. 2026;12:. doi:10.3389/fcvm.2025.1694001 PMID:41647804"
+ },
+ "Hu 2024": {
+  "doi": "10.1093/ehjacc/zuae037",
+  "title": "Development and external validation of a dynamic risk score for early prediction of cardiogenic shock in cardiac intensive care units using machine learning",
+  "citation": "Hu Y, Lui A, Goldstein M, Sudarshan M, Tinsay A, Tsui C et al.. Development and external validation of a dynamic risk score for early prediction of cardiogenic shock in cardiac intensive care units using machine learning. European Heart Journal: Acute Cardiovascular Care. 2024;13:472-480. doi:10.1093/ehjacc/zuae037 PMID:38518758"
+ },
+ "Bohm 2025": {
+  "doi": "10.1093/ehjdh/ztaf002",
+  "title": "Machine learning-based scoring system to predict cardiogenic shock in acute coronary syndrome",
+  "citation": "Böhm A, Segev A, Jajcay N, Krychtiuk KA, Tavazzi G, Spartalis M et al.. Machine learning-based scoring system to predict cardiogenic shock in acute coronary syndrome. European Heart Journal - Digital Health. 2025;6:240-251. doi:10.1093/ehjdh/ztaf002 PMID:40110217"
+ },
+ "PADS 2026": {
+  "doi": "10.3390/jcm15186957",
+  "title": "Generalization, Cross-ICU Transfer, and Explainability of a Mortality and Time-to-Discharge Framework for the Intensive Care Unit",
+  "citation": "Pardo À, Gómez J, Berrueta J, García-Martínez A, Orts P, Manrique S et al.. Generalization, Cross-ICU Transfer, and Explainability of a Mortality and Time-to-Discharge Framework for the Intensive Care Unit. Journal of Clinical Medicine. 2026;15:6957. doi:10.3390/jcm15186957 PMID:42795730"
+ },
+ "CICU ML score": {
+  "doi": "10.1093/ehjdh/ztae098",
+  "title": "Machine learning score to predict in-hospital outcomes in patients hospitalized in cardiac intensive care unit",
+  "citation": "Weizman O, Hamzi K, Henry P, Schurtz G, Hauguel-Moreau M, Trimaille A et al.. Machine learning score to predict in-hospital outcomes in patients hospitalized in cardiac intensive care unit. European Heart Journal - Digital Health. 2024;6:218-227. doi:10.1093/ehjdh/ztae098 PMID:40110223"
+ },
+ "CRT preprint": {
+  "doi": "10.64898/2026.09.29.26364303",
+  "title": "Operational Heterogeneity of Capillary Refill Time Across Two Public ICU Databases: A Methodological Analysis",
+  "citation": "Xia X, Xie Z. Operational Heterogeneity of Capillary Refill Time Across Two Public ICU Databases: A Methodological Analysis. . 2026;:. doi:10.64898/2026.09.29.26364303"
+ },
+ "CCM evolution 2012": {
+  "doi": "10.1161/cir.0b013e31826890b0",
+  "title": "Evolution of Critical Care Cardiology: Transformation of the Cardiovascular Intensive Care Unit and the Emerging Need for New Medical Staffing and Training Models",
+  "citation": "Morrow DA, Fang JC, Fintel DJ, Granger CB, Katz JN, Kushner FG et al.. Evolution of Critical Care Cardiology: Transformation of the Cardiovascular Intensive Care Unit and the Emerging Need for New Medical Staffing and Training Models. Circulation. 2012;126:1408-1428. doi:10.1161/cir.0b013e31826890b0 PMID:22893607"
+ },
+ "CCM future 2016": {
+  "doi": "10.1016/j.jacc.2016.04.036",
+  "title": "The Genesis, Maturation, and Future of Critical Care Cardiology",
+  "citation": "Katz JN, Minder M, Olenchock B, Price S, Goldfarb M, Washam JB et al.. The Genesis, Maturation, and Future of Critical Care Cardiology. Journal of the American College of Cardiology. 2016;68:67-79. doi:10.1016/j.jacc.2016.04.036 PMID:27364053"
+ },
+ "Diuretic response 2014": {
+  "doi": "10.1093/eurheartj/ehu065",
+  "title": "Diuretic response in acute heart failure: clinical characteristics and prognostic significance",
+  "citation": "Valente MAE, Voors AA, Damman K, Van Veldhuisen DJ, Massie BM, O'Connor CM et al.. Diuretic response in acute heart failure: clinical characteristics and prognostic significance. European Heart Journal. 2014;35:1284-1293. doi:10.1093/eurheartj/ehu065 PMID:24585267"
+ },
+ "Fluid balance 2015": {
+  "doi": "10.1186/s13054-015-1085-4",
+  "title": "Fluid balance and mortality in critically ill patients with acute kidney injury: a multicenter prospective epidemiological study",
+  "citation": "Wang N, Jiang L, Zhu B, Wen Y, Xi XM. Fluid balance and mortality in critically ill patients with acute kidney injury: a multicenter prospective epidemiological study. Critical Care. 2015;19:. doi:10.1186/s13054-015-1085-4 PMID:26494153"
+ },
+ "TRIPOD+AI 2024": {
+  "doi": "10.1136/bmj-2023-078378",
+  "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
+  "citation": "Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B et al.. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378 PMID:38626948"
+ },
+ "pLOS HF EJCN 2025": {
+  "doi": "10.1093/eurjcn/zvaf075",
+  "title": "Development and external validation of a prediction model for prolonged intensive care unit stay in heart failure patients",
+  "citation": "Yang E, He X, Li L, Cui Y, Yang H, Wang Q. Development and external validation of a prediction model for prolonged intensive care unit stay in heart failure patients. European Journal of Cardiovascular Nursing. 2025;24:973-981. doi:10.1093/eurjcn/zvaf075 PMID:40293816"
+ }
+}
