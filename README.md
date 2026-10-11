@@ -45,16 +45,19 @@ docs/       data access notes and variable definitions
 | File | Role |
 |---|---|
 | `build_cp.py` | Build the MIMIC-IV development cohort (first cardiac ICU stay) and extract the bedside examination items (oedema `224862`, oedema location `224031`, capillary refill `223951`/`224308`) |
-| `build_cp_eicu.py` | Build the eICU-CRD replication cohort and extract bedside signs from `physicalExam` |
-| `analyze_cp2.py` | Primary analysis: phenotypes, adjustment, discrimination, calibration, IDI/NRI, decision-curve analysis, temporal validation |
+| `build_cp_eicu.py` | Build the eICU-CRD replication cohort and extract bedside signs from `physicalExam` (blood pressure from `nurseCharting`, haemoglobin from `labname = 'Hgb'`) |
+| `patch_temp.py` | Temperature unit harmonisation (Fahrenheit → Celsius; implausible-value handling) |
+| `analyze_cp2.py` | **Primary analysis**: phenotypes, adjustment, discrimination, calibration, IDI/NRI, decision-curve analysis, temporal validation |
 | `analyze_cp_eicu.py` | Replication using each individual congestion sign (single-sign sensitivity) |
 | `analyze_cp_eicu2.py` | Replication using the composite congestion definition |
 | `final_eicu_model.py` | Transferred model, external AUROC, observed-to-expected ratio, calibration intercept and slope |
 | `analyze_cp_traj2.py` | Congestion trajectory (0–24 h vs 24–72 h) and its incremental value |
 | `tables_cp.py`, `table1_cp.py` | Table 1 (baseline by phenotype) and Tables 2–4 |
-| `figures_cp.py`, `fig3_redo.py` | All manuscript figures (400 dpi PNG) |
-| `critique_eicu.py`, `calib_fix.py`, `mk_supp2.py` | Pre-specified secondary and sensitivity analyses: alternative congestion definitions, calibration on the correct analysis set, missingness, like-for-like comparison |
-| `patch_temp.py` | Temperature unit harmonisation (Fahrenheit → Celsius; implausible-value handling) |
+| `figures_cp.py`, `fig3_redo.py` | Manuscript Figures 2–10 (400 dpi PNG) |
+| `jcm_figures.py`, `jcm_fig_renumber.py` | Figure 1 (participant flow) and the graphical abstract; final figure numbering and 600 dpi TIFF export |
+| `critique_checks.py`, `fix_critique2c.py` | Pre-specified secondary analyses: oedema grade as indicator variables, like-for-like dichotomised comparison, external missingness, temperature-excluded sensitivity |
+| `critique_eicu.py`, `calib_fix.py`, `mk_supp2.py` | Alternative congestion definitions, calibration on the correct analysis set, missingness, supplementary Tables S1–S3 |
+| `verify_critique2.py` | Verification of the raw charted value domain of the oedema item (Table S4) |
 | `verify_refs_cp.py`, `refs_final_cp.py`, `build_mdpi_refs.py` | Reference metadata verification (Europe PMC, Crossref, DataCite) |
 
 **Paths.** Each script defines the location of the source databases and of the working directory at the top (`M`, `E`, `D`, `OUT`). Adjust these to your local installation before running.
@@ -86,11 +89,23 @@ pip install -r requirements.txt
 
 Exact package versions used for the submitted manuscript are listed in `requirements.txt`.
 
-Two extraction issues were resolved during the analysis and are handled explicitly in the code, because both would otherwise silently corrupt key covariates in eICU-CRD:
+Three extraction issues were resolved during the analysis and are handled explicitly in the code, because all three would otherwise silently corrupt key covariates in eICU-CRD:
 
 1. **Blood pressure.** `vitalPeriodic.systemicsystolic` and `systemicmean` are arterial-line values present in only about a quarter of stays. Systolic and mean arterial pressure are taken as the minimum across non-invasive (`nurseCharting`: `Non-Invasive BP Systolic`/`Mean`) and invasive (`Invasive BP Systolic`/`Mean`) sources.
 2. **Haemoglobin.** Stored under `labname = 'Hgb'`, not `'hemoglobin'`.
 3. **Temperature.** A small minority of eICU-CRD temperature records are in Fahrenheit or implausible; these are converted or discarded before averaging. In MIMIC-IV, Fahrenheit values are charted under a separate itemid (`223761`) and are converted before averaging.
+
+## How to cite
+
+If you use this code or these aggregate results, please cite the manuscript above. A permanent DOI will be minted through Zenodo once the repository is released; until then, please cite this repository directly:
+
+```
+Miao Q, Cen J, Chen L, Lu R, Zhang R. Bedside congestion–perfusion phenotypes in the
+cardiac intensive care unit: analysis code and aggregate results. GitHub repository,
+2026. https://github.com/qingcaimiao/<repository-name>
+```
+
+Metadata for citation managers is provided in `CITATION.cff`.
 
 ## Licence
 
