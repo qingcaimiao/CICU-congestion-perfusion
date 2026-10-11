@@ -1,7 +1,7 @@
 Metric,Routine,Routine + phenotype
-"AUROC (apparent, MIMIC-IV)",0.858,0.870
-ΔAUROC (95% CI),-,+0.0124 (+0.0069 to +0.0177)
-IDI,-,+0.0203
-NRI (continuous),-,+0.5374
-NRI (categorical),-,+0.0955
-Temporal validation AUROC (<=2013 -> >=2014),-,0.853
+"AUROC (apparent, MIMIC-IV)",0.858,0.871
+ΔAUROC (95% CI),-,+0.0126 (+0.0074 to +0.0186)
+IDI,-,+0.0209
+NRI (continuous),-,+0.5337
+NRI (categorical),-,+0.0539
+Temporal validation AUROC (<=2013 -> >=2014),-,0.851

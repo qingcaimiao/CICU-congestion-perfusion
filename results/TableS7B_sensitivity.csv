@@ -1,0 +1,16 @@
+Metric,Screened (primary),As charted (sensitivity),Absolute difference
+"Development cohort, routine-variable model, AUROC",0.858,0.858,0.000
+"Development cohort, routine + phenotype, AUROC",0.871,0.870,0.001
+ΔAUROC,+0.0126,+0.0124,+0.0002
+"ΔAUROC, lower 95% CI limit",+0.0074,+0.0072,+0.0002
+"ΔAUROC, upper 95% CI limit",+0.0186,+0.0177,+0.0009
+IDI,+0.0209,+0.0203,+0.0005
+Temporal validation AUROC,0.851,0.854,0.003
+"Adjusted OR, wet-warm",1.633,1.628,0.005
+"Adjusted OR, dry-cold",3.201,3.127,0.074
+"Adjusted OR, wet-cold",4.494,4.435,0.059
+External AUROC (18 covariates),0.855,0.852,0.002
+External calibration slope,0.826,0.810,0.016
+External calibration intercept,-0.870,-0.903,+0.033
+External observed-to-expected ratio,0.66,0.65,0.01
+External mean predicted risk (%),10.67,10.77,0.10

@@ -8,6 +8,7 @@ plt.rcParams.update({'font.family':'Arial','font.size':9,'axes.linewidth':0.8,
                      'xtick.major.width':0.8,'ytick.major.width':0.8,'axes.spines.top':False,'axes.spines.right':False})
 from scipy import stats
 import statsmodels.api as sm
+np.random.seed(20261011)   # 与 analyze_cp2.py 相同，保证 ΔAUC 的 bootstrap 区间一致
 D  = 'D:/workbuddygongzuokongjian/2026-10-11-13-20-58/T2_data'
 OUT= 'D:/桌面/workbuddyzuopin/CPxiangmu/03_结果'
 FIG= 'D:/桌面/workbuddyzuopin/CPxiangmu/04_图'
@@ -109,7 +110,7 @@ t3=pd.DataFrame([
  {'Metric':'IDI','Routine':'-','Routine + phenotype':'%+.4f'%idi(yv,p1,p2)},
  {'Metric':'NRI (continuous)','Routine':'-','Routine + phenotype':'%+.4f'%nri},
  {'Metric':'NRI (categorical)','Routine':'-','Routine + phenotype':'%+.4f'%cat_nri(yv,p1,p2)},
- {'Metric':'Temporal validation AUROC (<=2013 -> >=2014)','Routine':'-','Routine + phenotype':'0.853'},
+ {'Metric':'Temporal validation AUROC (<=2013 -> >=2014)','Routine':'-','Routine + phenotype':'0.851'},
 ])
 t3.to_csv(OUT+'/Table3_model_performance.csv', index=False)
 print('\nTable 3:\n', t3.to_string(index=False))

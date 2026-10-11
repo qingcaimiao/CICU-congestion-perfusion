@@ -1,0 +1,20 @@
+variable,name,n_cohort,nonnull_before,nonnull_after,stays_with_implausible
+hr_min,心率 min,27757,27069,27067,589
+hr_max,心率 max,27757,27069,27067,2
+sbp_min,收缩压 min,27757,25309,25307,345
+map_min,平均动脉压 min,27757,24788,24785,968
+rr_max,呼吸频率 max,27757,24556,24545,418
+spo2_min,SpO2 min,27757,26711,26711,57
+temp_mean,体温 mean,27757,2662,2662,5
+admissionweight,入院体重,27757,26501,26490,11
+cr_max,肌酐 max,27757,25819,25819,0
+bun_max,尿素氮 max,27757,25742,25742,0
+na_min,钠 min,27757,25811,25811,0
+k_max,钾 max,27757,25972,25972,0
+cl_min,氯 min,27757,25749,25749,0
+hco3_min,碳酸氢盐 min,27757,25133,25133,0
+hgb_min,血红蛋白 min,27757,25322,25322,1
+wbc_max,白细胞 max,27757,25101,25101,73
+plt_min,血小板 min,27757,24827,24827,1
+glu_max,血糖 max,27757,25780,25780,0
+lac_max,乳酸 max,27757,7513,7513,1

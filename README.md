@@ -26,11 +26,11 @@ Three questions were prespecified:
 | Analysis set | 12,052 (both signs charted) | 1,555 (both signs documented) |
 | In-hospital deaths | 758 (6.29%) | 110 (7.1%) |
 | Phenotype mortality | dry-warm 4.10% → wet-cold 29.92% | dry-warm 2.92% → wet-cold 28.29% |
-| Discrimination | AUROC 0.858 → **0.870** with phenotype | external AUROC **0.856** |
-| Calibration on transfer | — | O:E 0.65, slope 0.76, intercept −0.97 |
+| Discrimination | AUROC 0.858 → **0.871** with phenotype | external AUROC **0.855** |
+| Calibration on transfer | — | O:E 0.66, slope 0.83, intercept −0.87 |
 
 * The **perfusion** axis transported almost exactly (3.86% vs 27.36%).
-* The **specific** nurse-charted pitting-depth measurement does not exist in eICU-CRD, and none of the three alternative congestion signs available there reproduced the mortality gradient. On a like-for-like dichotomised comparison, prolonged capillary refill (adjusted OR 3.05) contributed about twice as much as oedema ≥6 mm (1.58).
+* The **specific** nurse-charted pitting-depth measurement does not exist in eICU-CRD, and none of the three alternative congestion signs available there reproduced the mortality gradient. On a like-for-like dichotomised comparison, prolonged capillary refill (adjusted OR 3.11) contributed about twice as much as oedema ≥6 mm (1.58).
 
 ## Repository contents
 
@@ -39,6 +39,12 @@ code/       analysis scripts (Python 3.13)
 results/    aggregate outputs: every table value, confidence interval and model metric
 docs/       data access notes and variable definitions
 ```
+
+Every continuous covariate is summarised after a pre-specified physiological plausibility screen
+(values outside an adult ICU range are treated as charting errors and set to missing before the
+per-stay minimum, maximum or mean is taken), and the version of every principal analysis that uses
+the values exactly as charted is reported alongside it (`results/sensitivity_raw_vs_screened.csv`,
+`results/TableS7*`). Ranges, excluded record counts and the sensitivity comparison are in Table S7.
 
 ### `code/` — suggested execution order
 

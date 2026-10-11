@@ -1,0 +1,19 @@
+Variable,Unit,Range,Development: records screened,Development: excluded n,Development: excluded %,Development: stays affected,Replication: records screened,Replication: excluded n,Replication: excluded %,Replication: stays affected
+Heart rate,/min,20–300,576792,264,0.046,184,6793485,1824,0.027,591
+Respiratory rate,/min,1–80,569213,4243,0.745,51,5908131,42809,0.725,418
+Oxygen saturation,%,1–100,558991,40,0.007,22,6120083,137,0.002,57
+Systolic blood pressure,mmHg,20–300,584132,46,0.008,30,2121791,1094,0.052,345
+Mean arterial pressure,mmHg,20–250,584763,1029,0.176,426,2031295,6737,0.332,968
+Temperature,°C,25–45,190413,135,0.071,0,2033103,2811,0.138,13
+Body weight,kg,20–400,19873,11,0.055,11,—,—,—,—
+Creatinine (max),mg/dL,0.05–50,48191,1,0.002,0,50064,0,0.0,0
+Urea nitrogen (max),mg/dL,0.5–300,48042,0,0.0,0,49694,0,0.0,0
+Sodium (min),mmol/L,80–200,46150,0,0.0,0,62304,0,0.0,0
+Potassium (max),mmol/L,1–15,50604,1,0.002,1,69210,0,0.0,0
+Chloride (min),mmol/L,50–160,51115,0,0.0,0,50011,1,0.002,0
+Bicarbonate (min),mmol/L,1–60,47484,0,0.0,0,48268,1,0.002,0
+Haemoglobin (min),g/dL,1–25,55902,0,0.0,0,53986,2,0.004,1
+White cell count (max),K/µL,0.1–500,54387,0,0.0,0,46518,159,0.342,73
+Platelet count (min),K/µL,1–3000,56040,0,0.0,0,46920,1,0.002,1
+Glucose (max),mg/dL,10–4000,38373,0,0.0,0,54365,0,0.0,0
+Lactate (max),mmol/L,0.1–40,63520,2,0.003,1,16207,1,0.006,1

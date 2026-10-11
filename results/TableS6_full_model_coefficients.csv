@@ -1,0 +1,51 @@
+Panel,Term,Coding,Median,SD,beta,SE,OR,OR_low,OR_high,p
+"A. Development model (23 covariates, MIMIC-IV)",(intercept),per unit (0/1),—,—,-4.0853,0.115,—,—,—,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)",Age (years),per 1 SD,68.0,13.07,0.3248,0.0501,1.384,1.254,1.527,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Heart rate, minimum (bpm)",per 1 SD,67.0,12.99,0.0777,0.0435,1.081,0.992,1.177,0.0745
+"A. Development model (23 covariates, MIMIC-IV)","Heart rate, maximum (bpm)",per 1 SD,95.0,17.99,0.1451,0.0437,1.156,1.061,1.26,0.000911
+"A. Development model (23 covariates, MIMIC-IV)","Systolic BP, minimum (mmHg)",per 1 SD,88.0,13.56,-0.2632,0.0573,0.769,0.687,0.86,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Mean arterial pressure, minimum (mmHg)",per 1 SD,59.0,9.82,-0.0124,0.0562,0.988,0.885,1.103,0.826
+"A. Development model (23 covariates, MIMIC-IV)","Oxygen saturation, minimum (%)",per 1 SD,93.0,5.58,-0.1851,0.0293,0.831,0.785,0.88,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)",Admission weight (kg),per 1 SD,82.6,21.2,-0.0602,0.0495,0.942,0.855,1.037,0.224
+"A. Development model (23 covariates, MIMIC-IV)","Creatinine, maximum (mg/dL)",per 1 SD,1.0,1.28,-0.1001,0.0493,0.905,0.821,0.996,0.0422
+"A. Development model (23 covariates, MIMIC-IV)","Urea nitrogen, maximum (mg/dL)",per 1 SD,18.0,18.59,0.3559,0.0427,1.427,1.313,1.552,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Sodium, minimum (mmol/L)",per 1 SD,137.0,3.96,0.4778,0.0561,1.613,1.445,1.8,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Potassium, maximum (mmol/L)",per 1 SD,4.5,0.63,0.0411,0.0382,1.042,0.967,1.123,0.283
+"A. Development model (23 covariates, MIMIC-IV)","Chloride, minimum (mmol/L)",per 1 SD,104.0,5.35,-0.6576,0.0661,0.518,0.455,0.59,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Bicarbonate, minimum (mmol/L)",per 1 SD,22.0,3.69,-0.4378,0.0423,0.645,0.594,0.701,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Haemoglobin, minimum (g/dL)",per 1 SD,9.4,1.99,-0.0291,0.0439,0.971,0.891,1.058,0.507
+"A. Development model (23 covariates, MIMIC-IV)","White cell count, maximum (K/uL)",per 1 SD,14.0,7.66,0.0021,0.0406,1.002,0.925,1.085,0.959
+"A. Development model (23 covariates, MIMIC-IV)","Platelets, minimum (K/uL)",per 1 SD,143.0,76.8,0.018,0.0406,1.018,0.94,1.102,0.657
+"A. Development model (23 covariates, MIMIC-IV)","Glucose, maximum (mg/dL)",per 1 SD,128.0,81.15,0.2047,0.0313,1.227,1.154,1.305,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)","Respiratory rate, maximum (breaths/min)",per 1 SD,27.0,6.11,0.2039,0.0401,1.226,1.134,1.326,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)",Female sex (male = 0),per unit (0/1),—,—,0.1453,0.096,1.156,0.958,1.396,0.13
+"A. Development model (23 covariates, MIMIC-IV)",Invasive mechanical ventilation (0/1),per unit (0/1),—,—,-0.1726,0.1245,0.841,0.659,1.074,0.166
+"A. Development model (23 covariates, MIMIC-IV)",Any vasoactive drug infusion (0/1),per unit (0/1),—,—,0.3239,0.1181,1.382,1.097,1.742,0.00608
+"A. Development model (23 covariates, MIMIC-IV)",Congestive heart failure (0/1),per unit (0/1),—,—,-0.003,0.1021,0.997,0.816,1.218,0.977
+"A. Development model (23 covariates, MIMIC-IV)",Chronic kidney disease (0/1),per unit (0/1),—,—,0.101,0.1097,1.106,0.892,1.372,0.357
+"A. Development model (23 covariates, MIMIC-IV)",Wet-warm phenotype (vs dry-warm),per unit (0/1),—,—,0.4903,0.1335,1.633,1.257,2.121,0.00024
+"A. Development model (23 covariates, MIMIC-IV)",Dry-cold phenotype (vs dry-warm),per unit (0/1),—,—,1.1633,0.1207,3.201,2.526,4.055,<1e-4
+"A. Development model (23 covariates, MIMIC-IV)",Wet-cold phenotype (vs dry-warm),per unit (0/1),—,—,1.5028,0.1808,4.494,3.153,6.406,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)",(intercept),per unit (0/1),—,—,-3.9874,0.0816,—,—,—,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Age (years),per 1 SD,68.0,13.07,0.3367,0.0492,1.4,1.271,1.542,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Heart rate, minimum (bpm)",per 1 SD,67.0,12.99,0.0828,0.0435,1.086,0.998,1.183,0.0569
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Heart rate, maximum (bpm)",per 1 SD,95.0,17.99,0.1387,0.0437,1.149,1.054,1.252,0.00152
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Systolic BP, minimum (mmHg)",per 1 SD,88.0,13.56,-0.2844,0.0562,0.752,0.674,0.84,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Mean arterial pressure, minimum (mmHg)",per 1 SD,59.0,9.82,-0.0204,0.0557,0.98,0.878,1.093,0.715
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Respiratory rate, maximum (breaths/min)",per 1 SD,27.0,6.11,0.2046,0.0398,1.227,1.135,1.326,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Oxygen saturation, minimum (%)",per 1 SD,93.0,5.58,-0.1849,0.0292,0.831,0.785,0.88,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Admission weight (kg),per 1 SD,82.6,21.2,-0.0591,0.0494,0.943,0.856,1.038,0.231
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Creatinine, maximum (mg/dL)",per 1 SD,1.0,1.28,-0.089,0.0475,0.915,0.834,1.004,0.0608
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Urea nitrogen, maximum (mg/dL)",per 1 SD,18.0,18.59,0.3668,0.0414,1.443,1.331,1.565,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Sodium, minimum (mmol/L)",per 1 SD,137.0,3.96,0.4762,0.0549,1.61,1.446,1.793,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Potassium, maximum (mmol/L)",per 1 SD,4.5,0.63,0.0428,0.0382,1.044,0.968,1.125,0.263
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Chloride, minimum (mmol/L)",per 1 SD,104.0,5.35,-0.6612,0.0627,0.516,0.456,0.584,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Bicarbonate, minimum (mmol/L)",per 1 SD,22.0,3.69,-0.438,0.0419,0.645,0.594,0.701,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Haemoglobin, minimum (g/dL)",per 1 SD,9.4,1.99,-0.0348,0.0431,0.966,0.888,1.051,0.42
+"B. Transferred model (18 covariates, applied to eICU-CRD)","White cell count, maximum (K/uL)",per 1 SD,14.0,7.66,0.0028,0.0399,1.003,0.927,1.084,0.943
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Platelets, minimum (K/uL)",per 1 SD,143.0,76.8,0.0126,0.04,1.013,0.936,1.095,0.754
+"B. Transferred model (18 covariates, applied to eICU-CRD)","Glucose, maximum (mg/dL)",per 1 SD,128.0,81.15,0.2045,0.0313,1.227,1.154,1.305,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Female sex (male = 0),per unit (0/1),—,—,0.1324,0.0957,1.142,0.946,1.377,0.166
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Wet-warm phenotype (vs dry-warm),per unit (0/1),—,—,0.509,0.1331,1.664,1.282,2.159,0.000131
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Dry-cold phenotype (vs dry-warm),per unit (0/1),—,—,1.1765,0.1201,3.243,2.563,4.104,<1e-4
+"B. Transferred model (18 covariates, applied to eICU-CRD)",Wet-cold phenotype (vs dry-warm),per unit (0/1),—,—,1.5173,0.1804,4.56,3.202,6.495,<1e-4
