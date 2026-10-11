@@ -102,7 +102,7 @@ If you use this code or these aggregate results, please cite the manuscript abov
 ```
 Miao Q, Cen J, Chen L, Lu R, Zhang R. Bedside congestion–perfusion phenotypes in the
 cardiac intensive care unit: analysis code and aggregate results. GitHub repository,
-2026. https://github.com/qingcaimiao/<repository-name>
+2026. https://github.com/qingcaimiao/CICU-congestion-perfusion
 ```
 
 Metadata for citation managers is provided in `CITATION.cff`.

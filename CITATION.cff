@@ -28,7 +28,7 @@ contact:
 version: "1.0.0"
 date-released: "2026-10-11"
 license: MIT
-repository-code: "https://github.com/qingcaimiao/<repository-name>"
+repository-code: "https://github.com/qingcaimiao/CICU-congestion-perfusion"
 keywords:
   - cardiac intensive care unit
   - congestion
