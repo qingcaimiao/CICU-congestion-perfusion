@@ -2,7 +2,7 @@
 
 Analysis code and aggregate results for the study:
 
-> **Bedside Congestion–Perfusion Phenotypes from Routinely Documented Nursing Assessments and In-Hospital Mortality in the Cardiac Intensive Care Unit: Development in MIMIC-IV and External Replication in eICU**
+> **Nurse-Charted Congestion–Perfusion Phenotypes in the Cardiac Intensive Care Unit: Perfusion Replicates, Congestion Is Documentation-Dependent**
 > Qingcai Miao, Jianhong Cen, Lu Chen, Runzhi Lu, Renjie Zhang
 > Hebei North University; Handan First Hospital; Handan Key Laboratory of Cardiac Precision Medicine
 
@@ -66,8 +66,8 @@ the values exactly as charted is reported alongside it (`results/sensitivity_raw
 | `final_eicu_model.py` | Transferred model, external AUROC, observed-to-expected ratio, calibration intercept and slope |
 | `analyze_cp_traj2.py` | Congestion trajectory (0–24 h vs 24–72 h) and its incremental value |
 | `tables_cp.py`, `table1_cp.py` | Table 1 (baseline by phenotype) and Tables 2–4 |
-| `figures_cp.py`, `fig3_redo.py` | Manuscript Figures 2–10 (400 dpi PNG) |
-| `jcm_figures.py`, `jcm_fig_renumber.py` | Figure 1 (participant flow) and the graphical abstract; final figure numbering and 600 dpi TIFF export |
+| `figures_cp.py`, `fig3_redo.py` | Manuscript Figures 2–9 (400 dpi PNG) |
+| `jcm_figures.py`, `jcm_fig_renumber.py` | Figure 1 (participant flow) and the graphical abstract; final figure numbering (nine main figures; the variable-importance panel is Supplementary Figure S1) and 600 dpi TIFF export |
 | `critique_checks.py`, `fix_critique2c.py` | Pre-specified secondary analyses: oedema grade as indicator variables, like-for-like dichotomised comparison, external missingness, temperature-excluded sensitivity |
 | `critique_eicu.py`, `calib_fix.py`, `mk_supp2.py` | Alternative congestion definitions, calibration on the correct analysis set, missingness, supplementary Tables S1–S3 |
 | `verify_critique2.py` | Verification of the raw charted value domain of the oedema item (Table S4) |

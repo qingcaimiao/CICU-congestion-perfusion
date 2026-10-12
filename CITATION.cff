@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or these aggregate results, please cite both the repository and the associated manuscript."
-title: "Analysis code and aggregate results: Bedside Congestion–Perfusion Phenotypes from Routinely Documented Nursing Assessments and In-Hospital Mortality in the Cardiac Intensive Care Unit (development in MIMIC-IV, external replication in eICU)"
+title: "Analysis code and aggregate results: Nurse-Charted Congestion–Perfusion Phenotypes in the Cardiac Intensive Care Unit: Perfusion Replicates, Congestion Is Documentation-Dependent"
 type: software
 authors:
   - family-names: Miao
@@ -26,7 +26,7 @@ contact:
     email: zhangrenjie725@sina.com
     orcid: "https://orcid.org/0009-0009-4026-2068"
 version: "1.0.0"
-date-released: "2026-10-11"
+date-released: "2026-10-12"
 license: MIT
 repository-code: "https://github.com/qingcaimiao/CICU-congestion-perfusion"
 keywords:
