@@ -1,0 +1,12 @@
+{
+ "n": 27757,
+ "edema": 7.5,
+ "jvd": 5.3,
+ "crackles": 9.3,
+ "perfusion": 5.6,
+ "any_congestion_field": 9.7,
+ "any_congestion_field_n": 2693,
+ "all_three_fields": 4.8,
+ "all_three_fields_n": 1323,
+ "no_congestion_field": 25064
+}

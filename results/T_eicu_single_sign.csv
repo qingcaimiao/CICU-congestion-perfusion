@@ -1,5 +1,5 @@
-definition,n_pos,mort_pos,n_neg,mort_neg,ratio
-Peripheral oedema only,663,9.05,1430,6.22,1.45
-Jugular venous distension only,195,10.26,1274,5.81,1.77
-Pulmonary crackles only,753,9.83,1829,5.63,1.75
-Impaired peripheral perfusion,212,27.36,1346,3.86,7.08
+definition,n_pos,mort_pos,n_neg,mort_neg,n_documented,doc_pct_of_cohort,ratio
+Peripheral oedema only,663,12.67,1430,9.23,2093,7.5,1.37
+Jugular venous distension only,195,17.95,1274,9.18,1469,5.3,1.95
+Pulmonary crackles only,753,14.61,1829,8.2,2582,9.3,1.78
+Impaired peripheral perfusion,212,33.96,1346,6.24,1558,5.6,5.44

@@ -37,8 +37,8 @@
 | Adjusted OR, wet-warm | 1.633 | 1.628 | 0.005 |
 | Adjusted OR, dry-cold | 3.201 | 3.127 | 0.074 |
 | Adjusted OR, wet-cold | 4.494 | 4.435 | 0.059 |
-| External AUROC (18 covariates) | 0.855 | 0.852 | 0.002 |
-| External calibration slope | 0.826 | 0.810 | 0.016 |
-| External calibration intercept | -0.870 | -0.903 | +0.033 |
-| External observed-to-expected ratio | 0.66 | 0.65 | 0.01 |
+| External AUROC (18 covariates) | 0.835 | 0.832 | 0.002 |
+| External calibration slope | 0.791 | 0.775 | 0.016 |
+| External calibration intercept | -0.442 | -0.478 | +0.036 |
+| External observed-to-expected ratio | 0.92 | 0.92 | 0.01 |
 | External mean predicted risk (%) | 10.67 | 10.77 | 0.10 |
