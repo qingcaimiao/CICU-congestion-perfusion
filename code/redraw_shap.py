@@ -13,7 +13,7 @@ fig, ax = plt.subplots(figsize=(4.6, 4.2))
 cols = ['#B23A3A' if f in ('ew2', 'cr2') else '#8A8A8A' for f in imp.f]
 ax.barh(list(imp.name), imp.v.values, color=cols)
 ax.set_xlabel('Mean |SHAP value|')
-ax.set_title('Variable importance (random forest, SHAP)', fontsize=9, loc='left')
+ax.set_title('Variable importance, random forest', fontsize=8.6, loc='left')
 plt.tight_layout(); plt.savefig(FIG + '/Fig9_SHAP.png', dpi=400); plt.close()
 print('Fig9_SHAP.png redrawn from T_shap_importance.csv; top5:')
 print(imp.tail(5).iloc[::-1][['name', 'v']].to_string(index=False))
