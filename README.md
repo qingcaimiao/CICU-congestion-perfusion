@@ -28,8 +28,9 @@ Three questions were prespecified:
 | Phenotype mortality | dry-warm 4.10% → wet-cold 29.92% | dry-warm 2.92% → wet-cold 28.29% |
 | Discrimination | AUROC 0.858 → **0.871** with phenotype | external AUROC **0.855** |
 | Calibration on transfer | — | O:E 0.66, slope 0.83, intercept −0.87 |
+| Axis contribution (ΔAUROC) | perfusion +0.0101; congestion +0.0038; both +0.0126 | perfusion +0.0155; congestion +0.0008 (null) |
 
-* The **perfusion** axis transported almost exactly (3.86% vs 27.36%).
+* The **perfusion** axis transported almost exactly (3.86% vs 27.36%) and carried about four-fifths of the incremental discrimination in development; within eICU-CRD, congestion added no discrimination at all once perfusion was accounted for (`results/axis_contribution_eicu.csv`).
 * The **specific** nurse-charted pitting-depth measurement does not exist in eICU-CRD, and none of the three alternative congestion signs available there reproduced the mortality gradient. On a like-for-like dichotomised comparison, prolonged capillary refill (adjusted OR 3.11) contributed about twice as much as oedema ≥6 mm (1.58).
 
 ## Repository contents
