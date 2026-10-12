@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this code or these aggregate results, please cite both the repository and the associated manuscript."
+title: "Analysis code and aggregate results: Nurse-Charted Congestion–Perfusion Phenotypes in the Cardiac Intensive Care Unit: Perfusion Replicates, Congestion Is Documentation-Dependent"
+type: software
+authors:
+  - family-names: Miao
+    given-names: Qingcai
+    orcid: "https://orcid.org/0009-0006-1479-6726"
+    affiliation: "Hebei North University, Zhangjiakou, Hebei, China"
+  - family-names: Cen
+    given-names: Jianhong
+    affiliation: "Hebei North University, Zhangjiakou, Hebei, China"
+  - family-names: Chen
+    given-names: Lu
+    affiliation: "Hebei North University, Zhangjiakou, Hebei, China"
+  - family-names: Lu
+    given-names: Runzhi
+    affiliation: "Hebei North University, Zhangjiakou, Hebei, China"
+  - family-names: Zhang
+    given-names: Renjie
+    orcid: "https://orcid.org/0009-0009-4026-2068"
+    affiliation: "Department of Cardiology, Handan First Hospital, Handan, Hebei, China; Handan Key Laboratory of Cardiac Precision Medicine, Handan, China"
+contact:
+  - family-names: Zhang
+    given-names: Renjie
+    email: zhangrenjie725@sina.com
+    orcid: "https://orcid.org/0009-0009-4026-2068"
+version: "1.0.0"
+date-released: "2026-10-12"
+license: MIT
+repository-code: "https://github.com/qingcaimiao/CICU-congestion-perfusion"
+keywords:
+  - cardiac intensive care unit
+  - congestion
+  - capillary refill time
+  - physical examination
+  - clinical prediction model
+  - external validation
+  - transportability
+  - MIMIC-IV
+  - eICU-CRD
+abstract: >-
+  Cohort-definition and analysis code, together with all aggregate outputs, for a
+  study that defined and externally replicated a bedside congestion–perfusion
+  phenotype (nurse-charted pitting oedema depth and capillary refill time) in
+  20,806 first cardiac intensive care unit stays in MIMIC-IV v3.1, with
+  replication in the eICU Collaborative Research Database v2.0. No row-level
+  patient data are included: the PhysioNet data use agreements for both
+  databases prohibit redistribution of patient-level records.

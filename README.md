@@ -1,4 +1,5 @@
 # Bedside congestion–perfusion phenotypes in the cardiac intensive care unit
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23310936.svg)](https://doi.org/10.5281/zenodo.23310936)
 
 Analysis code and aggregate results for the study:
 
