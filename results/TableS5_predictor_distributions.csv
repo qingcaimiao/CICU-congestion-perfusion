@@ -1,24 +1,25 @@
-Variable,Type,Development,Replication,SMD
-Age (years),median (IQR),68.0 (59.0–76.0),67.0 (55.0–77.0),0.11
-"Heart rate, minimum (bpm)",median (IQR),67.0 (60.0–75.0),68.0 (59.0–78.0),-0.06
-"Heart rate, maximum (bpm)",median (IQR),95.0 (87.0–107.0),105.0 (92.0–120.0),-0.45
-"Systolic BP, minimum (mmHg)",median (IQR),88.0 (80.0–94.0),88.0 (77.0–101.0),-0.07
-"Mean arterial pressure, minimum (mmHg)",median (IQR),59.0 (54.0–64.0),57.0 (51.0–65.0),0.1
-"Respiratory rate, maximum (breaths/min)",median (IQR),27.0 (23.0–30.0),27.0 (24.0–32.0),-0.16
-"Oxygen saturation, minimum (%)",median (IQR),93.0 (91.0–95.0),87.0 (81.0–91.0),0.89
-Admission weight (kg),median (IQR),82.6 (70.4–96.6),81.3 (68.0–97.6),0.01
-"Creatinine, maximum (mg/dL)",median (IQR),1.0 (0.8–1.4),1.1 (0.8–1.8),-0.19
-"Urea nitrogen, maximum (mg/dL)",median (IQR),18.0 (14.0–27.0),22.0 (15.0–37.0),-0.26
-"Sodium, minimum (mmol/L)",median (IQR),137.0 (135.0–139.0),135.0 (133.0–138.0),0.38
-"Potassium, maximum (mmol/L)",median (IQR),4.5 (4.2–4.9),4.4 (4.0–5.0),0.02
-"Chloride, minimum (mmol/L)",median (IQR),104.0 (101.0–107.0),103.0 (99.0–107.0),0.11
-"Bicarbonate, minimum (mmol/L)",median (IQR),22.0 (20.0–24.0),23.0 (20.0–26.0),-0.24
-"Haemoglobin, minimum (g/dL)",median (IQR),9.4 (8.2–10.8),10.3 (8.5–12.1),-0.33
-"White cell count, maximum (K/uL)",median (IQR),14.0 (10.5–18.3),12.7 (9.1–17.7),-0.11
-"Platelets, minimum (K/uL)",median (IQR),143.0 (109.0–189.0),177.0 (126.8–233.2),-0.34
-"Glucose, maximum (mg/dL)",median (IQR),128.0 (110.0–157.0),141.0 (115.0–183.0),-0.24
-Female sex,n (%),4129 (34.3),628 (40.8),-0.13
-Wet-warm phenotype (vs dry-warm),n (%),1245 (10.3),653 (42.4),-0.78
-Dry-cold phenotype (vs dry-warm),n (%),874 (7.3),60 (3.9),0.15
-Wet-cold phenotype (vs dry-warm),n (%),254 (2.1),149 (9.7),-0.33
-In-hospital death,n (%),758 (6.3),108 (7.0),-0.03
+Variable,Type,Development,Replication,SMD,Development_n,Replication_n
+age,median (IQR),68.0 (59.0–76.0),67.0 (55.0–77.0),0.11,12052,1541
+female,n (%),4129 (34.3),628 (40.8),-0.13,12052,1541
+age,median (IQR),68.0 (59.0–76.0),67.0 (55.0–77.0),0.11,12052,1541
+hr_min,median (IQR),67.0 (60.0–75.0),68.0 (59.0–78.0),-0.06,12052,1537
+hr_max,median (IQR),95.0 (87.0–107.0),105.0 (92.0–120.0),-0.45,12052,1537
+sbp_min,median (IQR),88.0 (80.0–94.0),88.0 (77.0–101.0),-0.07,12001,1529
+map_min,median (IQR),59.0 (54.0–64.0),57.0 (51.0–65.0),0.1,12001,1529
+rr_max,median (IQR),27.0 (23.0–30.0),27.0 (24.0–32.0),-0.16,12035,1521
+spo2_min,median (IQR),93.0 (91.0–95.0),87.0 (81.0–91.0),0.89,12044,1530
+adm_weight,median (IQR),82.6 (70.4–96.6),81.3 (68.0–97.6),0.01,11568,1489
+cr_max,median (IQR),1.0 (0.8–1.4),1.1 (0.8–1.8),-0.19,12000,1536
+bun_max,median (IQR),18.0 (14.0–27.0),22.0 (15.0–37.0),-0.26,11999,1536
+na_min,median (IQR),137.0 (135.0–139.0),135.0 (133.0–138.0),0.38,11989,1538
+k_max,median (IQR),4.5 (4.2–4.9),4.4 (4.0–5.0),0.02,11970,1537
+cl_min,median (IQR),104.0 (101.0–107.0),103.0 (99.0–107.0),0.11,12001,1536
+hco3_min,median (IQR),22.0 (20.0–24.0),23.0 (20.0–26.0),-0.24,11999,1534
+hgb_min,median (IQR),9.4 (8.2–10.8),10.3 (8.5–12.1),-0.33,11972,1522
+wbc_max,median (IQR),14.0 (10.5–18.3),12.7 (9.1–17.7),-0.11,11971,1528
+plt_min,median (IQR),143.0 (109.0–189.0),177.0 (126.8–233.2),-0.34,11974,1524
+glu_max,median (IQR),128.0 (110.0–157.0),141.0 (115.0–183.0),-0.24,11855,1536
+WetWarm,n (%),1245 (10.3),653 (42.4),-0.78,12052,1541
+DryCold,n (%),874 (7.3),60 (3.9),0.15,12052,1541
+WetCold,n (%),254 (2.1),149 (9.7),-0.33,12052,1541
+In-hospital death,n (%),758 (6.3),152 (9.9),-0.13,12052,1541

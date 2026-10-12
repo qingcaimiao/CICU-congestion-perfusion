@@ -22,13 +22,13 @@ Three questions were prespecified:
 
 | | MIMIC-IV v3.1 (development) | eICU-CRD v2.0 (replication) |
 |---|---|---|
-| Cohort | 20,806 first cardiac ICU stays | 27,757 cardiac ICU stays (208 hospitals) |
+| Cohort | 20,806 first cardiac ICU stays | 27,757 cardiac ICU stays (208 hospitals; 36 contributed cardiac-ICU admissions, 6 contributed analysable cases) |
 | Analysis set | 12,052 (both signs charted) | 1,555 (both signs documented) |
-| In-hospital deaths | 758 (6.29%) | 110 (7.1%) |
-| Phenotype mortality | dry-warm 4.10% → wet-cold 29.92% | dry-warm 2.92% → wet-cold 28.29% |
+| In-hospital deaths | 758 (6.29%) | 156 (10.0%) |
+| Phenotype mortality | dry-warm 4.10% → wet-cold 29.92% | dry-warm 4.53% → wet-cold 34.87% |
 | Discrimination | AUROC 0.858 → **0.871** with phenotype | external AUROC **0.835** |
 | Calibration on transfer | — | O:E 0.92, slope 0.79, intercept −0.44 |
-| Axis contribution (ΔAUROC) | perfusion +0.0101; congestion +0.0038; both +0.0126 | perfusion +0.0155; congestion +0.0008 (null) |
+| Axis contribution (ΔAUROC) | perfusion +0.0101; congestion +0.0038; both +0.0126 | perfusion +0.0128; congestion +0.0012 (95% CI −0.0011 to +0.0036, null); both +0.0142 |
 
 * The transferred model is the **full congestion-perfusion model** (18 continuous variables, sex and three phenotype
   indicators; 22 parameters excluding the intercept), so its external AUROC is directly comparable with the

@@ -1,28 +1,30 @@
 {
  "with temperature": {
   "apparent_auc": 0.872,
-  "external_auc": 0.85,
-  "oe": 0.68,
-  "slope": 0.814,
-  "intercept": -0.848,
+  "external_auc": 0.833,
+  "oe": 0.95,
+  "slope": 0.782,
+  "intercept": -0.42,
   "n": 1535,
-  "deaths": 108,
-  "epv": 5.7,
-  "n_vars": 19,
+  "deaths": 152,
+  "n_continuous_variables": 19,
+  "n_parameters_excl_intercept": 23,
+  "epv": 6.61,
   "mean_pred": 10.41,
-  "obs": 7.04
+  "obs": 9.9
  },
  "temperature excluded": {
   "apparent_auc": 0.87,
-  "external_auc": 0.855,
-  "oe": 0.66,
-  "slope": 0.826,
-  "intercept": -0.87,
+  "external_auc": 0.835,
+  "oe": 0.92,
+  "slope": 0.791,
+  "intercept": -0.442,
   "n": 1541,
-  "deaths": 108,
-  "epv": 6.0,
-  "n_vars": 18,
+  "deaths": 152,
+  "n_continuous_variables": 18,
+  "n_parameters_excl_intercept": 22,
+  "epv": 6.91,
   "mean_pred": 10.67,
-  "obs": 7.01
+  "obs": 9.86
  }
 }

@@ -1,0 +1,32 @@
+{
+ "eicu_n": 27757,
+ "eicu_died": 2666,
+ "edema_doc": 2093,
+ "perf_doc": 1558,
+ "quadrant": [
+  {
+   "quad": "DryCold",
+   "n": 161,
+   "deaths": 56,
+   "pct": 34.78
+  },
+  {
+   "quad": "DryWarm",
+   "n": 1099,
+   "deaths": 66,
+   "pct": 6.01
+  },
+  {
+   "quad": "WetCold",
+   "n": 50,
+   "deaths": 15,
+   "pct": 30.0
+  },
+  {
+   "quad": "WetWarm",
+   "n": 231,
+   "deaths": 17,
+   "pct": 7.36
+  }
+ ]
+}

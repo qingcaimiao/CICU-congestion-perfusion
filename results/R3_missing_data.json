@@ -1,0 +1,54 @@
+{
+ "mimic_imputed": {
+  "n": 12052,
+  "deaths": 758,
+  "auc_base": 0.8584,
+  "auc_pheno": 0.871,
+  "dauc": 0.0126,
+  "dauc_ci": [
+   0.0074,
+   0.0182
+  ],
+  "OR": {
+   "WetWarm": 1.633,
+   "DryCold": 3.201,
+   "WetCold": 4.494
+  }
+ },
+ "mimic_complete": {
+  "n": 11266,
+  "deaths": 636,
+  "auc_base": 0.8638,
+  "auc_pheno": 0.8763,
+  "dauc": 0.0125,
+  "dauc_ci": [
+   0.0071,
+   0.0187
+  ],
+  "OR": {
+   "WetWarm": 1.804,
+   "DryCold": 3.118,
+   "WetCold": 4.796
+  }
+ },
+ "eicu_ge60": {
+  "n": 1541,
+  "deaths": 152,
+  "auc": 0.848,
+  "OR": {
+   "WetWarm": 1.271,
+   "DryCold": 4.56,
+   "WetCold": 3.408
+  }
+ },
+ "eicu_complete": {
+  "n": 1432,
+  "deaths": 136,
+  "auc": 0.85,
+  "OR": {
+   "WetWarm": 1.231,
+   "DryCold": 3.849,
+   "WetCold": 3.172
+  }
+ }
+}

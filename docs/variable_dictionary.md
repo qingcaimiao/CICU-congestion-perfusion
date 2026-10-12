@@ -63,7 +63,7 @@ Replication analyses are restricted to stays in which congestion **and** perfusi
 
 ## Transferable covariates
 
-Retained only if available in >= 60% of the replication set. Temperature failed this criterion (31.1% available in eICU-CRD vs 91.1% in development) and was excluded from the primary transferred model; the version including it is reported as a sensitivity analysis (external AUROC 0.850 vs 0.856).
+Retained only if available in >= 60% of the replication set. Temperature failed this criterion (31.1% available in eICU-CRD vs 91.1% in development) and was excluded from the primary transferred model; the version including it is reported as a sensitivity analysis (external AUROC 0.833 when included vs 0.835 in the primary specification).
 
 ## Unit harmonisation
 

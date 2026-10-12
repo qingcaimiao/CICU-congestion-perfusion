@@ -1,0 +1,102 @@
+{
+ "any_field": {
+  "tag": "any-field",
+  "n": 1541,
+  "deaths": 152,
+  "auc_base": 0.8338,
+  "congestion": {
+   "auc": 0.8348,
+   "dauc": 0.001,
+   "dauc_ci": [
+    -0.0014,
+    0.0033
+   ],
+   "or": 1.21,
+   "or_ci": [
+    0.8,
+    1.85
+   ],
+   "p": 0.3657
+  },
+  "perfusion": {
+   "auc": 0.8467,
+   "dauc": 0.0128,
+   "dauc_ci": [
+    0.0009,
+    0.0257
+   ],
+   "or": 3.19,
+   "or_ci": [
+    2.04,
+    4.96
+   ],
+   "p": 0.0
+  },
+  "quad_DryWarm": {
+   "n": 679,
+   "mort": 4.42
+  },
+  "quad_WetWarm": {
+   "n": 653,
+   "mort": 8.12
+  },
+  "quad_DryCold": {
+   "n": 60,
+   "mort": 31.67
+  },
+  "quad_WetCold": {
+   "n": 149,
+   "mort": 33.56
+  }
+ },
+ "all_three": {
+  "tag": "all-three-fields",
+  "n": 954,
+  "deaths": 99,
+  "auc_base": 0.8516,
+  "congestion": {
+   "auc": 0.8548,
+   "dauc": 0.0032,
+   "dauc_ci": [
+    -0.0021,
+    0.0085
+   ],
+   "or": 1.48,
+   "or_ci": [
+    0.85,
+    2.59
+   ],
+   "p": 0.168
+  },
+  "perfusion": {
+   "auc": 0.8585,
+   "dauc": 0.007,
+   "dauc_ci": [
+    -0.0057,
+    0.0199
+   ],
+   "or": 3.07,
+   "or_ci": [
+    1.76,
+    5.34
+   ],
+   "p": 0.0001
+  },
+  "quad_DryWarm": {
+   "n": 380,
+   "mort": 3.68
+  },
+  "quad_WetWarm": {
+   "n": 427,
+   "mort": 9.13
+  },
+  "quad_DryCold": {
+   "n": 32,
+   "mort": 28.12
+  },
+  "quad_WetCold": {
+   "n": 115,
+   "mort": 32.17
+  }
+ }
+}

@@ -15,14 +15,14 @@ Each row is a separate model fitted on top of the routine covariate set; ΔAUROC
 
 † Increment relative to the model containing impaired perfusion alone.
 
-**Panel B. Replication cohort (eICU-CRD; n = 1,541; 108 deaths).** Because the development-cohort congestion measurement is absent from this database and the alternative signs are different instruments, these models were fitted *within* eICU-CRD rather than by transferring coefficients, and are therefore exploratory. The routine covariate set comprises the 18 transferable variables plus sex, i.e. 19 predictors.
+**Panel B. Replication cohort (eICU-CRD; n = 1,541; 152 in-hospital deaths).** Because the development-cohort congestion measurement is absent from this database and the alternative signs are different instruments, these models were fitted *within* eICU-CRD rather than by transferring coefficients, and are therefore exploratory. The routine covariate set comprises the 18 transferable variables plus sex, i.e. 19 predictors.
 
 | Model | Predictors | AUROC | ΔAUROC (95% CI) | Adjusted OR for the added term(s) (95% CI) |
 |---|---|---|---|---|
-| Routine variables only | 19 | 0.861 | — | — |
-| + impaired perfusion (documented inadequate perfusion) | 20 | 0.877 | +0.0155 (+0.0030 to +0.0301) | 3.26 (1.94–5.50) |
-| + congestion (composite: oedema, jugular venous distension or crackles) | 20 | 0.862 | +0.0008 (−0.0018 to +0.0035) | 1.21 (0.73–2.00) |
-| + both axes (four phenotypes) | 22 | 0.878 | +0.0163 (+0.0031 to +0.0313) | wet-warm 1.19 (0.64–2.24); dry-cold 4.13 (1.69–10.12); wet-cold 3.47 (1.72–7.01) |
-| + both axes, as single terms | 21 | 0.877 | +0.0158 (+0.0025 to +0.0304) | perfusion 3.24 (1.92–5.47); congestion 1.07 (0.63–1.80) |
+| Routine variables only | 19 | 0.834 | — | — |
+| + impaired perfusion (documented inadequate perfusion) | 20 | 0.847 | +0.0128 (+0.0015 to +0.0259) | 3.18 (2.04-4.96) |
+| + congestion (composite: oedema, jugular venous distension or crackles) | 20 | 0.835 | +0.0012 (-0.0011 to +0.0036) | 1.21 (0.80-1.85) |
+| + both axes (four phenotypes) | 22 | 0.848 | +0.0142 (+0.0029 to +0.0266) | wet-warm 1.27 (0.76-2.11); dry-cold 4.55 (2.11-9.81); wet-cold 3.41 (1.88-6.19) |
+| + both axes, as single terms | 21 | 0.847 | +0.0136 (+0.0021 to +0.0268) | perfusion 3.15 (2.02-4.93); congestion 1.09 (0.71-1.68) |
 
-Once perfusion was accounted for, congestion retained a small but statistically significant increment in the development cohort (+0.0025 ΔAUROC; adjusted odds ratio 1.56, 95% CI 1.25 to 1.94) but contributed nothing in the replication cohort (odds ratio 1.07, 95% CI 0.63 to 1.80; AUROC 0.8769 → 0.8771 on adding the congestion term to a model already containing perfusion).
+Once perfusion was accounted for, congestion retained a small but statistically significant increment in the development cohort (+0.0025 ΔAUROC; adjusted odds ratio 1.56, 95% CI 1.25 to 1.94) but contributed no increment in the replication cohort (odds ratio 1.09, 95% CI 0.71-1.68; AUROC 0.834 → 0.847 on adding the congestion term to a model already containing perfusion), a null increment whose confidence interval crosses zero.
