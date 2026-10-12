@@ -30,6 +30,7 @@ Three questions were prespecified:
 | Calibration on transfer | — | O:E 0.92, slope 0.79, intercept −0.44 |
 | Axis contribution (ΔAUROC) | perfusion +0.0101; congestion +0.0038; both +0.0126 | perfusion +0.0155; congestion +0.0008 (null) |
 
+* eICU-CRD `physicalExam` uses a **closed value domain** for these fields (jugular venous distension: 2 values; peripheral perfusion: 4; peripheral oedema: 12; pulmonary auscultation: 22), and contains no *not assessed / NA / unable to assess* value anywhere — so an unrecorded field is never coded as positive.
 * Outcome is **in-hospital death** (MIMIC-IV `hospital_expire_flag`; eICU-CRD `hospitaldischargestatus`), not ICU-level death: 2,666 in-hospital deaths vs 1,727 unit-level deaths in the cardiac-ICU cohort.
 * The **perfusion** axis transported almost exactly (6.24% vs 33.96%) and carried about four-fifths of the incremental discrimination in development; within eICU-CRD, congestion added no discrimination at all once perfusion was accounted for (`results/axis_contribution_eicu.csv`).
 * The **specific** nurse-charted pitting-depth measurement does not exist in eICU-CRD, and none of the three alternative congestion signs available there reproduced the mortality gradient. On a like-for-like dichotomised comparison, prolonged capillary refill (adjusted OR 3.11) contributed about twice as much as oedema ≥6 mm (1.58).

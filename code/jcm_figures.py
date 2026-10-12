@@ -116,12 +116,12 @@ box(8, 28, 36, 11, 'Primary analysis set\nn = %s  (57.9%%)  |  deaths 758 (6.29%
 # --- right column ---
 box(59, 87, 36, 8, 'All unit stays\nn = %s  |  208 hospitals' % format(E1, ','), 'white', LINE)
 arrow(77, 87, 77, 83.5)
-box(59, 73, 36, 9, 'Cardiac ICU stays\nCardiac ICU %s; CCU-CTICU %s\nn = %s  |  deaths 1,727 (6.2%%)' % (format(12467, ','), format(15290, ','), format(E2, ',')), REP_F, REP_S, fs=7.6)
+box(59, 73, 36, 9, 'Cardiac ICU stays\nCardiac ICU %s; CCU-CTICU %s\nn = %s  |  in-hospital deaths 2,666 (9.6%%)' % (format(12467, ','), format(15290, ','), format(E2, ',')), REP_F, REP_S, fs=7.6)
 arrow(77, 73, 77, 69.5)
 box(59, 59, 36, 9, 'Congestion (any of three signs)\nand perfusion documented\nn = %s  |  deaths %d' % (format(E3, ','), E4), REP_F, REP_S, fs=7.6)
 arrow(77, 59, 77, 55.5)
 box(59, 44.5, 36, 10, 'Replication analysis set\nn = %s  |  deaths %d (%.1f%%)' % (format(E3, ','), E4, 100*E4/E3), '#E1F5EE', REP_S, fs=8.2)
-box(59, 31, 36, 11, 'Perfusion axis replicated\n3.86%% vs 27.36%%\nExternal AUROC 0.855', REP_F, REP_S, fs=7.6, bold_first=False)
+box(59, 31, 36, 11, 'Perfusion axis replicated\n6.24% vs 33.96%\nExternal AUROC 0.835', REP_F, REP_S, fs=7.6, bold_first=False)
 
 ax.plot([50.5, 50.5], [24, 94], color='#D3D1C7', lw=0.9, ls=(0, (4, 3)))
 ax.text(4, 4, 'Window for exposure ascertainment: 6 h before to 24 h after ICU admission. Outcome: in-hospital death over the entire hospitalisation.\n'
@@ -137,7 +137,7 @@ fig = plt.figure(figsize=(8.67, 5.0), dpi=300)
 ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis('off')
 ax.add_patch(Rectangle((0, 0), 100, 100, facecolor='white', edgecolor='none'))
 
-ax.text(50, 95.5, 'Routinely charted bedside signs define a congestion–perfusion phenotype in the cardiac ICU',
+ax.text(50, 95.5, 'Routinely charted bedside signs in the cardiac ICU: the perfusion axis transports, the congestion axis does not',
         ha='center', fontsize=11.5, color=INK, fontweight='bold')
 ax.plot([4, 96], [91.5, 91.5], color='#D3D1D7', lw=1.2)
 
@@ -168,15 +168,15 @@ ax.text(50, 58.5, 'MIMIC-IV, n = 12,052  |  deaths 758', ha='center', fontsize=7
 ax.text(84, 86, '3. What travels?', ha='center', fontsize=8.6, color=REP_S, fontweight='bold')
 ax.add_patch(FancyBboxPatch((72.5, 63), 25, 19, boxstyle='round,pad=0.5,rounding_size=1.2', linewidth=1.1, edgecolor=REP_S, facecolor=REP_F))
 ax.text(85, 78.6, 'eICU-CRD, 36 hospitals', ha='center', fontsize=7.6, color=INK)
-ax.text(85, 74.3, 'external AUROC 0.855', ha='center', fontsize=7.6, color=INK)
-ax.text(85, 69.6, 'Perfusion axis: 3.86% → 27.36%', ha='center', fontsize=7.2, color='#0F6E56', fontweight='bold')
+ax.text(85, 74.3, 'external AUROC 0.835', ha='center', fontsize=7.6, color=INK)
+ax.text(85, 69.6, 'Perfusion axis: 6.24% → 33.96%', ha='center', fontsize=7.2, color='#0F6E56', fontweight='bold')
 ax.text(85, 65.8, 'Congestion axis: did not replicate', ha='center', fontsize=7.2, color='#A32D2D', fontweight='bold')
 
 # bottom band
 ax.add_patch(FancyBboxPatch((2.5, 24), 95, 29, boxstyle='round,pad=0.6,rounding_size=1.2', linewidth=1.1, edgecolor=LINE, facecolor='#F1EFE8'))
 ax.text(50, 47.5, 'Beyond 23 conventional variables', ha='center', fontsize=8.4, color=INK, fontweight='bold')
-ax.text(50, 42.0, 'AUROC  0.858  →  0.871      ΔAUROC +0.0126 (95% CI +0.0074 to +0.0186)', ha='center', fontsize=8.2, color=INK)
-ax.text(50, 36.4, 'IDI +0.0209      categorical NRI +0.0539      temporal validation AUROC 0.851', ha='center', fontsize=7.8, color=MUT)
+ax.text(50, 42.0, 'Perfusion alone  ΔAUROC +0.0101     Congestion alone  +0.0038     Both axes  +0.0126', ha='center', fontsize=8.2, color=INK)
+ax.text(50, 36.4, 'AUROC 0.858 → 0.871      IDI +0.0209      categorical NRI +0.0539      temporal validation 0.851', ha='center', fontsize=7.8, color=MUT)
 ax.text(50, 30.0, 'Highest (wet-cold) vs lowest (dry-warm) phenotype: 29.92% vs 4.10% in-hospital mortality', ha='center', fontsize=7.8, color=INK)
 
 ax.text(50, 17.5, 'The perfusion sign transports across databases; the nurse-charted congestion measurement does not exist in the second database,',

@@ -15,7 +15,7 @@ FIG= 'D:/桌面/workbuddyzuopin/CPxiangmu/04_图'
 os.makedirs(FIG, exist_ok=True)
 c = duckdb.connect(); c.execute('PRAGMA threads=8')
 mm = c.execute(f"SELECT * FROM read_parquet('{OUT}/cp_analysis_set.parquet')").df()
-ee = c.execute(f"SELECT * FROM read_parquet('{D}/eicu_cp.parquet')").df()
+ee = c.execute(f"SELECT * FROM read_parquet('{D}/eicu_cp.parquet')").df().rename(columns={'admissionweight':'adm_weight'})   # 与 final_eicu_model.py 对齐列名，否则可得性筛查会少算一个变量
 CRED, CBLU, CGRY = '#B23A3A', '#2F5D8A', '#8A8A8A'
 
 # ---------- Fig 1 四象限梯度 ----------
@@ -125,7 +125,7 @@ for ax,(p,y,nm) in zip(axs,[(p2,yv,'MIMIC-IV (development, n=%d)'%len(yv)),(None
 # MIMIC 校准
 q=pd.qcut(p2,10,labels=False,duplicates='drop'); cl=pd.DataFrame({'p':p2,'y':yv,'b':q}).groupby('b').agg(pred=('p','mean'),obs=('y','mean'))
 ax=axs[0]; ax.plot([0,0.4],[0,0.4],'k--',lw=0.8); ax.plot(cl.pred,cl.obs,'o-',color=CBLU,ms=3.5,lw=1.4)
-ax.set_xlabel('Predicted mortality'); ax.set_ylabel('Observed mortality'); ax.set_title('A  MIMIC-IV, n=%d'%len(yv), fontsize=8.5, loc='left')
+ax.set_xlabel('Predicted mortality'); ax.set_ylabel('Observed mortality'); ax.set_title('A  MIMIC-IV, n=%s'%format(len(yv),','), fontsize=8.5, loc='left')
 ax.set_xlim(0,0.42); ax.set_ylim(0,0.42)
 # eICU 校准
 TRANS=['age','hr_min','hr_max','sbp_min','map_min','rr_max','spo2_min','adm_weight','cr_max','bun_max','na_min','k_max','cl_min','hco3_min','hgb_min','wbc_max','plt_min','glu_max']
@@ -138,12 +138,19 @@ def build(d):
     return X
 Xmm=build(mm); medt=Xmm.median(); sdt=Xmm.std().replace(0,1)
 mtr=sm.Logit(yv, sm.add_constant((Xmm.fillna(medt)-medt)/sdt)).fit(disp=0)
-Xee=build(e2); Xee['age']=num(e2.age); Zee=(Xee.fillna(medt)-medt)/sdt
-ok=Zee[TRANS].notna().mean(axis=1)>=0.6; Zee=Zee[ok]; yee=e2.died.values[ok].astype(int)
+Xee=build(e2)
+# 顺序不可颠倒：必须先按 >=60% 可得性筛住院，再做中位数插补（先插补会把缺失填掉、使筛子失效）
+keep=(Xee[TRANS].notna().mean(axis=1)>=0.6).values
+Xee=Xee.loc[keep]; yee=e2.loc[keep,'died'].values.astype(int)
+Zee=(Xee.fillna(medt)-medt)/sdt
 pee=mtr.predict(sm.add_constant(Zee)).values
+assert len(yee)==1541, '外部校准集 n 与 final_eicu_model.py 不一致：%d' % len(yee)
+_ref=np.load(OUT+'/pred_eicu_clean.npy')
+assert len(_ref)==len(pee) and np.allclose(np.sort(_ref), np.sort(pee), atol=1e-9), '校准面板预测值与 final_eicu_model.py 不一致'
+print('calibration panel: n=%d deaths=%d AUC=%.4f' % (len(yee), yee.sum(), auc(yee,pee)))
 q=pd.qcut(pee,8,labels=False,duplicates='drop'); cl2=pd.DataFrame({'p':pee,'y':yee,'b':q}).groupby('b').agg(pred=('p','mean'),obs=('y','mean'))
 ax=axs[1]; ax.plot([0,0.45],[0,0.45],'k--',lw=0.8); ax.plot(cl2.pred,cl2.obs,'o-',color=CRED,ms=3.5,lw=1.4)
-ax.set_xlabel('Predicted mortality'); ax.set_ylabel('Observed mortality'); ax.set_title('B  eICU-CRD, n=%d (AUC %.3f)'%(len(yee),auc(yee,pee)), fontsize=8.5, loc='left')
+ax.set_xlabel('Predicted mortality'); ax.set_ylabel('Observed mortality'); ax.set_title('B  eICU-CRD, n=%s (AUC %.3f)'%(format(len(yee),','),auc(yee,pee)), fontsize=8.5, loc='left')
 ax.set_xlim(0,0.46); ax.set_ylim(0,0.46)
 plt.tight_layout(); plt.savefig(FIG+'/Fig5_calibration.png', dpi=400); plt.close()
 
