@@ -1,0 +1,122 @@
+{
+ "spec": {
+  "n_columns": 22,
+  "n_continuous": 18,
+  "plus_sex": 1,
+  "plus_phenotype": 3,
+  "deaths": 152,
+  "epv_excl_intercept": 6.9,
+  "epv_if_19": 8.0,
+  "external_auc": 0.8346,
+  "oe": 0.924,
+  "slope": 0.791,
+  "intercept": -0.442,
+  "n": 1541,
+  "mean_pred": 10.67,
+  "obs": 9.86
+ },
+ "temporal": {
+  "total": 12052,
+  "train": 3844,
+  "test": 5871,
+  "missing_group": 2337,
+  "train_deaths": 153,
+  "test_deaths": 261,
+  "missing_deaths": 344,
+  "missing_mortality_pct": 14.72,
+  "groups": {
+   "nan": 2337,
+   "2014 - 2016": 2308,
+   "2017 - 2019": 1989,
+   "2008 - 2010": 1942,
+   "2011 - 2013": 1902,
+   "2020 - 2022": 1574
+  }
+ },
+ "complete_case": {
+  "n": 1432,
+  "deaths": 136,
+  "auc": 0.8359,
+  "oe": 0.875,
+  "slope": 0.795,
+  "intercept": -0.509
+ },
+ "per_hospital": [
+  {
+   "hospital": 141,
+   "n": 124,
+   "deaths": 7,
+   "mortality": 5.65,
+   "auc": 0.786
+  },
+  {
+   "hospital": 188,
+   "n": 369,
+   "deaths": 28,
+   "mortality": 7.59,
+   "auc": 0.816
+  },
+  {
+   "hospital": 382,
+   "n": 12,
+   "deaths": 2,
+   "mortality": 16.67,
+   "auc": "unstable"
+  },
+  {
+   "hospital": 394,
+   "n": 84,
+   "deaths": 10,
+   "mortality": 11.9,
+   "auc": 0.643
+  },
+  {
+   "hospital": 420,
+   "n": 951,
+   "deaths": 105,
+   "mortality": 11.04,
+   "auc": 0.858
+  },
+  {
+   "hospital": 458,
+   "n": 1,
+   "deaths": 0,
+   "mortality": 0.0,
+   "auc": "n/a"
+  }
+ ],
+ "perfusion_def": {
+  "hypoperf": {
+   "pos_n": 212,
+   "pos_pct": 33.96,
+   "neg_n": 1343,
+   "neg_pct": 6.25
+  },
+  "hypoperf_strict": {
+   "pos_n": 211,
+   "pos_pct": 34.12,
+   "neg_n": 1344,
+   "neg_pct": 6.25
+  }
+ },
+ "quad_def": {
+  "flushed 计入（主分析）": {
+   "DryWarm": 4.53,
+   "WetWarm": 8.04,
+   "DryCold": 31.67,
+   "WetCold": 34.87
+  },
+  "flushed 排除": {
+   "DryWarm": 4.53,
+   "WetWarm": 8.03,
+   "DryCold": 31.67,
+   "WetCold": 35.1
+  },
+  "flushed 排除 + localized/unilateral 计入阳性": {
+   "DryWarm": 4.43,
+   "WetWarm": 8.1,
+   "DryCold": 32.2,
+   "WetCold": 34.87
+  }
+ }
+}
