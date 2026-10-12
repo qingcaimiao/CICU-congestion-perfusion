@@ -1,0 +1,61 @@
+{
+  "title": "Analysis code and aggregate results: Nurse-Charted Congestion\u2013Perfusion Phenotypes in the Cardiac Intensive Care Unit: Perfusion Replicates, Congestion Is Documentation-Dependent",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "language": "eng",
+  "version": "1.0.0",
+  "publication_date": "2026-10-12",
+  "description": "<p>Cohort-definition and analysis code, together with all aggregate outputs, for a study that defined and externally replicated a bedside congestion\u2013perfusion phenotype in the cardiac intensive care unit.</p><p>The phenotype combines the two signs critical care nurses chart most often: pitting-oedema depth (ordinal 0\u20135) and capillary refill time (&gt;3 s). It was developed in 20,806 first cardiac intensive care unit stays in MIMIC-IV v3.1 (12,052 stays with both signs documented; 758 in-hospital deaths) and replicated in the eICU Collaborative Research Database v2.0 (1,541 stays; 152 in-hospital deaths).</p><p>Headline results: adding the phenotype to 23 routinely available variables raised the AUROC from 0.858 to 0.871; the increment was carried predominantly by the perfusion axis (impaired perfusion alone +0.0101 versus +0.0038 for congestion). Only the perfusion axis transported to the second database (mortality 6.24% versus 33.96% for adequate versus impaired perfusion; transferred-model AUROC 0.835; observed-to-expected ratio 0.92). The nurse-charted congestion measurement is absent from eICU-CRD, alternative congestion definitions added no incremental discrimination, and the congestion component is therefore documentation-dependent rather than transportable.</p><p><strong>No row-level patient data are included.</strong> The PhysioNet data use agreements for both databases prohibit redistribution of patient-level records; only aggregate tables and the analysis code are provided.</p>",
+  "creators": [
+    {
+      "name": "Miao, Qingcai",
+      "affiliation": "Hebei North University, Zhangjiakou, Hebei, China",
+      "orcid": "0009-0006-1479-6726"
+    },
+    {
+      "name": "Cen, Jianhong",
+      "affiliation": "Hebei North University, Zhangjiakou, Hebei, China"
+    },
+    {
+      "name": "Chen, Lu",
+      "affiliation": "Hebei North University, Zhangjiakou, Hebei, China"
+    },
+    {
+      "name": "Lu, Runzhi",
+      "affiliation": "Hebei North University, Zhangjiakou, Hebei, China"
+    },
+    {
+      "name": "Zhang, Renjie",
+      "affiliation": "Department of Cardiology, Handan First Hospital, Handan, Hebei, China; Handan Key Laboratory of Cardiac Precision Medicine, Handan, China",
+      "orcid": "0009-0009-4026-2068"
+    }
+  ],
+  "keywords": [
+    "cardiac intensive care unit",
+    "congestion",
+    "capillary refill time",
+    "physical examination",
+    "clinical prediction model",
+    "external validation",
+    "transportability",
+    "MIMIC-IV",
+    "eICU-CRD"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "references",
+      "identifier": "10.13026/kpb9-mt58",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.13026/c2wm1r",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "The associated manuscript is under review; this record archives version 1.0.0 of the code and aggregate results. The two related datasets are the source databases used (MIMIC-IV v3.1 and the eICU Collaborative Research Database), which are available from PhysioNet under their own data use agreements.",
+  "communities": []
+}
