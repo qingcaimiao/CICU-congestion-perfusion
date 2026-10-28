@@ -72,11 +72,11 @@ print('  参数列数（不含截距）= %d  = 18 连续 + 性别 + 3 表型哑�
 print('  事件 %d → EPV = %.1f（若按 19 计则为 %.1f）' % (yk.sum(), yk.sum() / n_par, yk.sum() / 19))
 
 # ================= 2. 时间验证样本 =================
-tt = c.execute(f"SELECT stay_id, anchor_year_group FROM read_parquet('{D}/mimic_T2.parquet')").df()
-gm = tt.set_index('stay_id')['anchor_year_group'].to_dict()
-d2 = mm.copy(); d2['ayg'] = d2.stay_id.map(gm)
-tr = d2[d2.ayg.isin([g for g in d2.ayg.dropna().unique() if g <= '2011 - 2013'])]
-te = d2[d2.ayg.isin([g for g in d2.ayg.dropna().unique() if g > '2011 - 2013'])]
+# 时代映射走 hosp/patients.csv（零缺失）；旧实现误用另一课题的 mimic_T2.parquet，
+# 只覆盖 9,715/12,052，把 2,337 例本队列患者误报为"无时代标注"
+from _ayg import attach_ayg, split_era
+d2 = attach_ayg(mm.copy(), con=c)
+tr, te = split_era(d2)
 miss = d2[d2.ayg.isna()]
 print('== 2. 时间验证 ==')
 print('  分析集 %d = 训练 %d + 测试 %d + anchor_year_group 缺失 %d' % (len(d2), len(tr), len(te), len(miss)))
@@ -85,7 +85,7 @@ for g, s in d2.groupby('ayg'):
 res['temporal'] = dict(total=int(len(d2)), train=int(len(tr)), test=int(len(te)), missing_group=int(len(miss)),
                        train_deaths=int(tr.died.sum()), test_deaths=int(te.died.sum()),
                        missing_deaths=int(miss.died.sum()),
-                       missing_mortality_pct=round(100 * miss.died.mean(), 2),
+                       missing_mortality_pct=(round(100 * miss.died.mean(), 2) if len(miss) else None),
                        groups={str(k): int(v) for k, v in d2.ayg.value_counts(dropna=False).items()})
 
 # ================= 3. eICU 完整案例外部性能 =================

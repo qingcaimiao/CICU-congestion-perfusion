@@ -265,8 +265,9 @@ for cut in [2, 3, 4]:
 tE = pd.DataFrame(rows); print(tE.to_string(index=False))
 tE.to_csv(OUT + '/R3_tableE_cutpoint.csv', index=False, encoding='utf-8-sig')
 # 跨时间分层：各 anchor_year_group 内 grade>=3 的死亡率差
-tt = c.execute(f"SELECT stay_id, anchor_year_group FROM read_parquet('{D}/mimic_T2.parquet')").df()
-mm2['ayg'] = mm2.stay_id.map(tt.set_index('stay_id')['anchor_year_group'].to_dict())
+# 时代映射走 hosp/patients.csv（零缺失），不再用另一课题的 mimic_T2.parquet
+from _ayg import attach_ayg
+mm2 = attach_ayg(mm2, con=c)
 print('  跨时间分层（各时段内：水肿≥6mm vs <6mm 的院内死亡率）')
 rows = []
 for g, s in mm2.dropna(subset=['ayg']).groupby('ayg'):

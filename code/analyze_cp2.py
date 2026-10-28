@@ -162,11 +162,13 @@ print('\n== DCA 净获益 (抽样) ==\n', dca.iloc[::5].round(4).to_string(index
 dca.to_csv(OUT+'/T_dca.csv', index=False)
 
 # ---------- 时间验证 ----------
-tt = c.execute(f"SELECT stay_id, anchor_year_group FROM read_parquet('{D}/mimic_T2.parquet')").df()
-grp_map = tt.set_index('stay_id')['anchor_year_group'].to_dict()
-d['ayg'] = d.stay_id.map(grp_map)
-tr = d[d.ayg.isin([g for g in d.ayg.dropna().unique() if g <= '2011 - 2013'])]
-te = d[d.ayg.isin([g for g in d.ayg.dropna().unique() if g > '2011 - 2013'])]
+# anchor_year_group 必须取自 hosp/patients.csv（零缺失）。旧实现从另一课题的
+# T2_data/mimic_T2.parquet 做 stay_id 映射，与本队列只有 9,715/12,052 重叠，
+# 会把 2,337 例误判为"无年代标注"，时间验证 AUROC 也因此被算成 0.851。
+# 详见 _ayg.py 模块 docstring。
+from _ayg import attach_ayg, split_era
+d = attach_ayg(d, con=c)
+tr, te = split_era(d)
 if len(tr)>500 and len(te)>500:
     Xtr_b = prep(tr); Xte_b = prep(te)
     medt = Xtr_b.median(); Ztr = (Xtr_b.fillna(medt)-medt)/Xtr_b.std().replace(0,1)

@@ -93,37 +93,41 @@ def arrow(x1, y1, x2, y2, style='-|>', lw=1.1, color=LINE, ls='-'):
                                  linewidth=lw, color=color, linestyle=ls,
                                  shrinkA=0, shrinkB=0))
 
-ax.text(26, 97.5, 'Development cohort (MIMIC-IV v3.1)', ha='center', fontsize=10.5, color=DEV_S, fontweight='bold')
-ax.text(77, 97.5, 'Replication cohort (eICU-CRD v2.0)', ha='center', fontsize=10.5, color=REP_S, fontweight='bold')
+# 横向布局（互不重叠）：左列 8..33 | 排除框 34..50 | 分隔虚线 50.8 | 右列 59..95
+LC = 20.5          # 左列中心
+RC = 77            # 右列中心
+
+ax.text(LC, 97.5, 'Development cohort (MIMIC-IV v3.1)', ha='center', fontsize=10.5, color=DEV_S, fontweight='bold')
+ax.text(RC, 97.5, 'Replication cohort (eICU-CRD v2.0)', ha='center', fontsize=10.5, color=REP_S, fontweight='bold')
 
 # --- left column ---
-box(8, 87, 36, 8, 'All ICU stays\nn = %s' % format(M1, ','), 'white', LINE)
-arrow(26, 87, 26, 83.5)
-box(8, 75, 36, 8, 'ICU stays in a cardiac unit\nCVICU %s; CCU %s  |  n = %s' % (format(14771, ','), format(10775, ','), format(M2, ',')), DEV_F, DEV_S)
-arrow(26, 75, 26, 71.5)
-box(42, 70.5, 34, 7, 'Excluded: repeat cardiac ICU\nadmission in the same patient\nn = %s' % format(M_ex_rep, ','), EXC_F, EXC_S, fs=7.4, bold_first=False)
-arrow(44.1, 74, 36, 72.5, color=EXC_S)
-box(8, 60, 36, 10, 'First cardiac ICU stay per patient\nn = %s  |  in-hospital deaths 1,575 (7.6%%)' % format(M3, ','), DEV_F, DEV_S)
-arrow(26, 60, 26, 56.5)
-box(42, 55, 34, 7, 'Excluded: oedema grade not charted\nin window −6 h to +24 h\nn = %s' % format(M_ex_oed, ','), EXC_F, EXC_S, fs=7.4, bold_first=False)
-arrow(44.1, 58.5, 36, 57)
-box(8, 44.5, 36, 10, 'Oedema grade documented\nn = %s (69.1%%)' % format(n_oed, ','), DEV_F, DEV_S)
-arrow(26, 44.5, 26, 41)
-box(42, 39.5, 34, 7, 'Excluded: capillary refill not\ncharted in window\nn = %s' % format(M_ex_crt, ','), EXC_F, EXC_S, fs=7.4, bold_first=False)
-arrow(44.1, 43, 36, 41.5)
-box(8, 28, 36, 11, 'Primary analysis set\nn = %s  (57.9%%)  |  deaths 758 (6.29%%)' % format(M4, ','), '#E6F1FB', DEV_S, fs=8.4)
+box(8, 87, 25, 8, 'All ICU stays\nn = %s' % format(M1, ','), 'white', LINE, fs=7.6)
+arrow(LC, 87, LC, 83.5)
+box(8, 75, 25, 8, 'ICU stays in a cardiac unit\nCVICU %s; CCU %s\nn = %s' % (format(14771, ','), format(10775, ','), format(M2, ',')), DEV_F, DEV_S, fs=7.4)
+arrow(LC, 75, LC, 71.5)
+box(34, 70.5, 16, 8.5, 'Excluded: repeat cardiac ICU\nadmission in the same patient\nn = %s' % format(M_ex_rep, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(33, 76, 34, 74.8, color=EXC_S)
+box(8, 60, 25, 10, 'First cardiac ICU stay\nper patient\nn = %s\nin-hospital deaths 1,575 (7.6%%)' % format(M3, ','), DEV_F, DEV_S, fs=7.4)
+arrow(LC, 60, LC, 56.5)
+box(34, 55, 16, 8.5, 'Excluded: oedema grade\nnot charted in window\n−6 h to +24 h  |  n = %s' % format(M_ex_oed, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(33, 61, 34, 59.3, color=EXC_S)
+box(8, 44.5, 25, 10, 'Oedema grade documented\nn = %s (69.1%%)' % format(n_oed, ','), DEV_F, DEV_S, fs=7.4)
+arrow(LC, 44.5, LC, 41)
+box(34, 39.5, 16, 8.5, 'Excluded: capillary refill\nnot charted in window\nn = %s' % format(M_ex_crt, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(33, 45.5, 34, 43.8, color=EXC_S)
+box(8, 28, 25, 11, 'Primary analysis set\nn = %s (57.9%%)\ndeaths 758 (6.29%%)' % format(M4, ','), '#E6F1FB', DEV_S, fs=8.0)
 
 # --- right column ---
-box(59, 87, 36, 8, 'All unit stays\nn = %s  |  208 hospitals' % format(E1, ','), 'white', LINE)
-arrow(77, 87, 77, 83.5)
+box(59, 87, 36, 8, 'All unit stays\nn = %s  |  208 hospitals' % format(E1, ','), 'white', LINE, fs=7.8)
+arrow(RC, 87, RC, 83.5)
 box(59, 73, 36, 9, 'Cardiac ICU stays\nCardiac ICU %s; CCU-CTICU %s\nn = %s  |  in-hospital deaths 2,666 (9.6%%)' % (format(12467, ','), format(15290, ','), format(E2, ',')), REP_F, REP_S, fs=7.6)
-arrow(77, 73, 77, 69.5)
+arrow(RC, 73, RC, 69.5)
 box(59, 59, 36, 9, 'Congestion (any of three signs)\nand perfusion documented\nn = %s  |  deaths %d' % (format(E3, ','), E4), REP_F, REP_S, fs=7.6)
-arrow(77, 59, 77, 55.5)
+arrow(RC, 59, RC, 55.5)
 box(59, 44.5, 36, 10, 'Replication analysis set\nn = %s  |  deaths %d (%.1f%%)' % (format(E3, ','), E4, 100*E4/E3), '#E1F5EE', REP_S, fs=8.2)
-box(59, 31, 36, 11, 'Perfusion axis replicated\n6.24% vs 33.96%\nExternal AUROC 0.835', REP_F, REP_S, fs=7.6, bold_first=False)
+box(59, 31, 36, 11, 'Perfusion axis replicated\n6.25% vs 33.96%\nExternal AUROC 0.835', REP_F, REP_S, fs=7.6, bold_first=False)
 
-ax.plot([50.5, 50.5], [24, 94], color='#D3D1C7', lw=0.9, ls=(0, (4, 3)))
+ax.plot([50.8, 50.8], [24, 94], color='#D3D1C7', lw=0.9, ls=(0, (4, 3)))
 ax.text(4, 4, 'Window for exposure ascertainment: 6 h before to 24 h after ICU admission. Outcome: in-hospital death over the entire hospitalisation.\n'
               'Reporting follows the STROBE statement for cohort studies and TRIPOD+AI for the prediction-model components.',
         ha='left', fontsize=7.2, color=MUT)
@@ -167,16 +171,16 @@ ax.text(50, 58.5, 'MIMIC-IV, n = 12,052  |  deaths 758', ha='center', fontsize=7
 # Zone C
 ax.text(84, 86, '3. What travels?', ha='center', fontsize=8.6, color=REP_S, fontweight='bold')
 ax.add_patch(FancyBboxPatch((72.5, 63), 25, 19, boxstyle='round,pad=0.5,rounding_size=1.2', linewidth=1.1, edgecolor=REP_S, facecolor=REP_F))
-ax.text(85, 78.6, 'eICU-CRD, 36 hospitals', ha='center', fontsize=7.6, color=INK)
+ax.text(85, 78.6, 'eICU-CRD, 6 contributing centres', ha='center', fontsize=7.2, color=INK)
 ax.text(85, 74.3, 'external AUROC 0.835', ha='center', fontsize=7.6, color=INK)
-ax.text(85, 69.6, 'Perfusion axis: 6.24% → 33.96%', ha='center', fontsize=7.2, color='#0F6E56', fontweight='bold')
+ax.text(85, 69.6, 'Perfusion axis: 6.25% → 33.96%', ha='center', fontsize=7.2, color='#0F6E56', fontweight='bold')
 ax.text(85, 65.8, 'Congestion axis: did not replicate', ha='center', fontsize=7.2, color='#A32D2D', fontweight='bold')
 
 # bottom band
 ax.add_patch(FancyBboxPatch((2.5, 24), 95, 29, boxstyle='round,pad=0.6,rounding_size=1.2', linewidth=1.1, edgecolor=LINE, facecolor='#F1EFE8'))
 ax.text(50, 47.5, 'Beyond 23 conventional variables', ha='center', fontsize=8.4, color=INK, fontweight='bold')
 ax.text(50, 42.0, 'Perfusion alone  ΔAUROC +0.0101     Congestion alone  +0.0038     Both axes  +0.0126', ha='center', fontsize=8.2, color=INK)
-ax.text(50, 36.4, 'AUROC 0.858 → 0.871      IDI +0.0209      categorical NRI +0.0539      temporal validation 0.851', ha='center', fontsize=7.8, color=MUT)
+ax.text(50, 36.4, 'AUROC 0.858 → 0.871      IDI +0.0209      categorical NRI +0.0539      temporal validation 0.867', ha='center', fontsize=7.8, color=MUT)
 ax.text(50, 30.0, 'Highest (wet-cold) vs lowest (dry-warm) phenotype: 29.92% vs 4.10% in-hospital mortality', ha='center', fontsize=7.8, color=INK)
 
 ax.text(50, 17.5, 'The perfusion sign transports across databases; the nurse-charted congestion measurement does not exist in the second database,',

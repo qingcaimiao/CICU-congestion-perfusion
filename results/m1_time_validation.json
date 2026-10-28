@@ -1,0 +1,49 @@
+{
+ "n_total": 12052,
+ "old_mapping_coverage": 9715,
+ "new_mapping_coverage": 12052,
+ "n_train": 4778,
+ "n_test": 7274,
+ "deaths_train": 277,
+ "deaths_test": 481,
+ "auroc_time_base": 0.847884562590878,
+ "auroc_time_full": 0.867372949957964,
+ "delta_time": 0.019488387367086024,
+ "per_group": [
+  {
+   "group": "2008 - 2010",
+   "n": 2476,
+   "deaths": 146,
+   "mort_pct": 5.9,
+   "auroc": 0.8244
+  },
+  {
+   "group": "2011 - 2013",
+   "n": 2302,
+   "deaths": 131,
+   "mort_pct": 5.69,
+   "auroc": 0.8906
+  },
+  {
+   "group": "2014 - 2016",
+   "n": 2803,
+   "deaths": 150,
+   "mort_pct": 5.35,
+   "auroc": 0.8701
+  },
+  {
+   "group": "2017 - 2019",
+   "n": 2576,
+   "deaths": 168,
+   "mort_pct": 6.52,
+   "auroc": 0.8859
+  },
+  {
+   "group": "2020 - 2022",
+   "n": 1895,
+   "deaths": 163,
+   "mort_pct": 8.6,
+   "auroc": 0.8855
+  }
+ ]
+}

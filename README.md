@@ -61,6 +61,7 @@ the values exactly as charted is reported alongside it (`results/sensitivity_raw
 | `build_cp.py` | Build the MIMIC-IV development cohort (first cardiac ICU stay) and extract the bedside examination items (oedema `224862`, oedema location `224031`, capillary refill `223951`/`224308`) |
 | `build_cp_eicu.py` | Build the eICU-CRD replication cohort and extract bedside signs from `physicalExam` (blood pressure from `nurseCharting`, haemoglobin from `labname = 'Hgb'`) |
 | `patch_temp.py` | Temperature unit harmonisation (Fahrenheit → Celsius; implausible-value handling) |
+| `_ayg.py` | **Era mapping for temporal validation.** Joins `anchor_year_group` from `hosp/patients.csv` on `subject_id`, with assertions on uniqueness and completeness; imported by every script that stratifies by era |
 | `analyze_cp2.py` | **Primary analysis**: phenotypes, adjustment, discrimination, calibration, IDI/NRI, decision-curve analysis, temporal validation |
 | `analyze_cp_eicu.py` | Replication using each individual congestion sign (single-sign sensitivity) |
 | `analyze_cp_eicu2.py` | Replication using the composite congestion definition |
@@ -103,20 +104,21 @@ pip install -r requirements.txt
 
 Exact package versions used for the submitted manuscript are listed in `requirements.txt`.
 
-Three extraction issues were resolved during the analysis and are handled explicitly in the code, because all three would otherwise silently corrupt key covariates in eICU-CRD:
+Four extraction issues were resolved during the analysis and are handled explicitly in the code, because all four would otherwise silently corrupt key covariates in eICU-CRD or silently drop patients from the MIMIC-IV cohort:
 
 1. **Blood pressure.** `vitalPeriodic.systemicsystolic` and `systemicmean` are arterial-line values present in only about a quarter of stays. Systolic and mean arterial pressure are taken as the minimum across non-invasive (`nurseCharting`: `Non-Invasive BP Systolic`/`Mean`) and invasive (`Invasive BP Systolic`/`Mean`) sources.
 2. **Haemoglobin.** Stored under `labname = 'Hgb'`, not `'hemoglobin'`.
 3. **Temperature.** A small minority of eICU-CRD temperature records are in Fahrenheit or implausible; these are converted or discarded before averaging. In MIMIC-IV, Fahrenheit values are charted under a separate itemid (`223761`) and are converted before averaging.
+4. **Era of admission.** `anchor_year_group` exists only in `hosp/patients.csv`, at patient level, and is populated for all 364,627 patients in MIMIC-IV v3.1. It must therefore be joined on `subject_id`. Joining it on `stay_id` through a stay-level intermediate table that covers a *different* cohort silently drops patients and biases the temporal-validation estimate: in this analysis that route retained 9,715 of 12,052 stays and returned AUROC 0.851, whereas the correct patient-level join retains all 12,052 and returns 0.867. `code/_ayg.py` performs the join with uniqueness and completeness assertions and is imported by every script that stratifies by era.
 
 ## How to cite
 
-If you use this code or these aggregate results, please cite the manuscript above. A permanent DOI will be minted through Zenodo once the repository is released; until then, please cite this repository directly:
+If you use this code or these aggregate results, please cite the archived release rather than the moving repository tip. The concept DOI below always resolves to the latest version; the version-specific DOI of the release cited in the manuscript is `10.5281/zenodo.23310937` (v1.0.0).
 
 ```
-Miao Q, Cen J, Chen L, Lu R, Zhang R. Bedside congestion–perfusion phenotypes in the
-cardiac intensive care unit: analysis code and aggregate results. GitHub repository,
-2026. https://github.com/qingcaimiao/CICU-congestion-perfusion
+Miao Q, Cen J, Chen L, Lu R, Zhang R. Analysis code and aggregate results:
+Nurse-charted congestion–perfusion phenotypes in the cardiac intensive care unit.
+Zenodo. https://doi.org/10.5281/zenodo.23310936
 ```
 
 Metadata for citation managers is provided in `CITATION.cff`.

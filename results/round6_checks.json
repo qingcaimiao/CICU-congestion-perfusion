@@ -17,20 +17,19 @@
  },
  "temporal": {
   "total": 12052,
-  "train": 3844,
-  "test": 5871,
-  "missing_group": 2337,
-  "train_deaths": 153,
-  "test_deaths": 261,
-  "missing_deaths": 344,
-  "missing_mortality_pct": 14.72,
+  "train": 4778,
+  "test": 7274,
+  "missing_group": 0,
+  "train_deaths": 277,
+  "test_deaths": 481,
+  "missing_deaths": 0,
+  "missing_mortality_pct": null,
   "groups": {
-   "nan": 2337,
-   "2014 - 2016": 2308,
-   "2017 - 2019": 1989,
-   "2008 - 2010": 1942,
-   "2011 - 2013": 1902,
-   "2020 - 2022": 1574
+   "2014 - 2016": 2803,
+   "2017 - 2019": 2576,
+   "2008 - 2010": 2476,
+   "2011 - 2013": 2302,
+   "2020 - 2022": 1895
   }
  },
  "complete_case": {

@@ -25,10 +25,10 @@ contact:
     given-names: Renjie
     email: zhangrenjie725@sina.com
     orcid: "https://orcid.org/0009-0009-4026-2068"
-version: "1.0.0"
-date-released: "2026-10-12"
+version: "1.1.0"
+date-released: "2026-10-28"
 license: MIT
-doi: "10.5281/zenodo.23310937"
+doi: "10.5281/zenodo.23310936"
 repository-code: "https://github.com/qingcaimiao/CICU-congestion-perfusion"
 keywords:
   - cardiac intensive care unit

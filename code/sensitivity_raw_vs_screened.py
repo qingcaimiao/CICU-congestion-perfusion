@@ -85,11 +85,10 @@ def dev_metrics(d):
     for k in ['WetWarm', 'DryCold', 'WetCold']:
         co, se = m2.params[k], m2.bse[k]
         r['OR_' + k] = np.exp(co); r['OR_' + k + '_lo'] = np.exp(co - 1.96 * se); r['OR_' + k + '_hi'] = np.exp(co + 1.96 * se)
-    # 时间验证
-    tt = c.execute(f"SELECT stay_id, anchor_year_group FROM read_parquet('{D}/mimic_T2.parquet')").df()
-    d = d.copy(); d['ayg'] = d.stay_id.map(tt.set_index('stay_id')['anchor_year_group'].to_dict())
-    tr = d[d.ayg.isin([g for g in d.ayg.dropna().unique() if g <= '2011 - 2013'])]
-    te = d[d.ayg.isin([g for g in d.ayg.dropna().unique() if g > '2011 - 2013'])]
+    # 时间验证：时代映射走 hosp/patients.csv（零缺失），不用另一课题的 mimic_T2.parquet
+    from _ayg import attach_ayg, split_era
+    d = attach_ayg(d.copy(), con=c)
+    tr, te = split_era(d)
 
     def prep(x):
         Xx = pd.DataFrame(index=x.index)
