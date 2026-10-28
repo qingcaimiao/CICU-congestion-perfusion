@@ -1,0 +1,28 @@
+{
+ "n": 12052,
+ "deaths": 758,
+ "B_requested": 500,
+ "apparent": {
+  "auc_base": 0.8584,
+  "auc_pheno": 0.871,
+  "delta": 0.0126
+ },
+ "A_fixed_cutpoint": {
+  "replicates": 500,
+  "optimism_mean": -0.0,
+  "optimism_sd": 0.0027,
+  "delta_corrected": 0.0127,
+  "cutpoint_distribution": null
+ },
+ "B_reselected_cutpoint": {
+  "replicates": 500,
+  "optimism_mean": 0.0003,
+  "delta_corrected": 0.0123,
+  "cutpoint_counts": {
+   "4": 340,
+   "3": 74,
+   "2": 86
+  }
+ },
+ "seed": 20261028
+}

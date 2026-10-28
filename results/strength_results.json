@@ -1,0 +1,160 @@
+{
+ "apache": {
+  "n": 1459,
+  "deaths": 139,
+  "apache_auroc": 0.7313,
+  "phenotype_only_auroc": 0.7227,
+  "combined_auroc": 0.7705,
+  "delta": 0.0392,
+  "delta_ci": [
+   -0.013,
+   0.0887
+  ],
+  "idi": 0.0829,
+  "or": {
+   "WetWarm": [
+    1.996,
+    1.222,
+    3.261,
+    0.005778763242637275
+   ],
+   "DryCold": [
+    9.167,
+    4.487,
+    18.73,
+    1.215676570505774e-09
+   ],
+   "WetCold": [
+    10.943,
+    6.405,
+    18.698,
+    2.044497665668564e-18
+   ]
+  }
+ },
+ "doc_eicu": {
+  "pf": 5.6,
+  "ed": 7.5,
+  "jv": 5.3,
+  "lu": 9.3,
+  "cong_any": 9.7,
+  "both_axes": 5.6
+ },
+ "doc_mimic": {
+  "n_denominator": 20806,
+  "both": 12052,
+  "both_pct": 57.9,
+  "edema_pct": 69.1
+ },
+ "likeforlike_eicu": {
+  "n": 1519,
+  "deaths": 150,
+  "crt_pos": 208,
+  "oed_any": 491,
+  "oed_sev": 170,
+  "base_auroc": 0.8241
+ },
+ "agreement_eicu": {
+  "oedema-jvd": {
+   "n": 1454,
+   "kappa": 0.134,
+   "disagree_pct": 28.7
+  },
+  "oedema-crackles": {
+   "n": 1454,
+   "kappa": 0.2,
+   "disagree_pct": 34.8
+  },
+  "jvd-crackles": {
+   "n": 1454,
+   "kappa": 0.127,
+   "disagree_pct": 32.3
+  }
+ },
+ "gradient_eicu": {
+  "oedema": {
+   "pos_pct": 11.24,
+   "neg_pct": 9.42,
+   "n_pos": 498,
+   "n_neg": 1040,
+   "diff": 1.82
+  },
+  "jvd": {
+   "pos_pct": 17.97,
+   "neg_pct": 9.47,
+   "n_pos": 128,
+   "n_neg": 845,
+   "diff": 8.5
+  },
+  "crackles": {
+   "pos_pct": 14.2,
+   "neg_pct": 8.62,
+   "n_pos": 500,
+   "n_neg": 963,
+   "diff": 5.58
+  },
+  "CRT (perfusion)": {
+   "pos_pct": 33.96,
+   "neg_pct": 6.25,
+   "n_pos": 212,
+   "n_neg": 1343,
+   "diff": 27.71
+  }
+ },
+ "adjusted_per_sign": {
+  "水肿（任意）": {
+   "n": 1524,
+   "events": 150,
+   "pos": 491,
+   "crt_or": [
+    3.238,
+    2.063,
+    5.083
+   ],
+   "sign_or": [
+    0.772,
+    0.486,
+    1.228
+   ],
+   "sign_p": 0.27442097474719207,
+   "wald_p": 4.3980849631543745e-05,
+   "auroc": 0.8462
+  },
+  "颈静脉充盈": {
+   "n": 962,
+   "events": 100,
+   "pos": 127,
+   "crt_or": [
+    2.928,
+    1.684,
+    5.092
+   ],
+   "sign_or": [
+    1.253,
+    0.675,
+    2.325
+   ],
+   "sign_p": 0.47425841253411094,
+   "wald_p": 0.04620775503848488,
+   "auroc": 0.8602
+  },
+  "肺部啰音": {
+   "n": 1449,
+   "events": 150,
+   "pos": 493,
+   "crt_or": [
+    3.352,
+    2.142,
+    5.244
+   ],
+   "sign_or": [
+    0.894,
+    0.589,
+    1.356
+   ],
+   "sign_p": 0.5974372209793729,
+   "wald_p": 4.22343536835473e-05,
+   "auroc": 0.8415
+  }
+ }
+}
