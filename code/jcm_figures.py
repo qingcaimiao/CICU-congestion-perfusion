@@ -94,28 +94,28 @@ def arrow(x1, y1, x2, y2, style='-|>', lw=1.1, color=LINE, ls='-'):
                                  shrinkA=0, shrinkB=0))
 
 # 横向布局（互不重叠）：左列 8..33 | 排除框 34..50 | 分隔虚线 50.8 | 右列 59..95
-LC = 20.5          # 左列中心
+LC = 19          # 左列中心
 RC = 77            # 右列中心
 
 ax.text(LC, 97.5, 'Development cohort (MIMIC-IV v3.1)', ha='center', fontsize=10.5, color=DEV_S, fontweight='bold')
 ax.text(RC, 97.5, 'Replication cohort (eICU-CRD v2.0)', ha='center', fontsize=10.5, color=REP_S, fontweight='bold')
 
 # --- left column ---
-box(8, 87, 25, 8, 'All ICU stays\nn = %s' % format(M1, ','), 'white', LINE, fs=7.6)
+box(8, 87, 22, 8, 'All ICU stays\nn = %s' % format(M1, ','), 'white', LINE, fs=7.6)
 arrow(LC, 87, LC, 83.5)
-box(8, 75, 25, 8, 'ICU stays in a cardiac unit\nCVICU %s; CCU %s\nn = %s' % (format(14771, ','), format(10775, ','), format(M2, ',')), DEV_F, DEV_S, fs=7.4)
+box(8, 75, 22, 8, 'ICU stays in a cardiac unit\nCVICU %s; CCU %s\nn = %s' % (format(14771, ','), format(10775, ','), format(M2, ',')), DEV_F, DEV_S, fs=7.4)
 arrow(LC, 75, LC, 71.5)
-box(34, 70.5, 16, 8.5, 'Excluded: repeat cardiac ICU\nadmission in the same patient\nn = %s' % format(M_ex_rep, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
-arrow(33, 76, 34, 74.8, color=EXC_S)
-box(8, 60, 25, 10, 'First cardiac ICU stay\nper patient\nn = %s\nin-hospital deaths 1,575 (7.6%%)' % format(M3, ','), DEV_F, DEV_S, fs=7.4)
+box(33.5, 70.5, 16, 8.5, 'Excluded: repeat cardiac ICU\nadmission in the same patient\nn = %s' % format(M_ex_rep, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(30.3, 74.75, 33.3, 74.75, color=EXC_S)
+box(8, 60, 22, 10, 'First cardiac ICU stay\nper patient\nn = %s\nin-hospital deaths 1,575 (7.6%%)' % format(M3, ','), DEV_F, DEV_S, fs=7.4)
 arrow(LC, 60, LC, 56.5)
-box(34, 55, 16, 8.5, 'Excluded: oedema grade\nnot charted in window\n−6 h to +24 h  |  n = %s' % format(M_ex_oed, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
-arrow(33, 61, 34, 59.3, color=EXC_S)
-box(8, 44.5, 25, 10, 'Oedema grade documented\nn = %s (69.1%%)' % format(n_oed, ','), DEV_F, DEV_S, fs=7.4)
+box(33.5, 55, 16, 8.5, 'Excluded: oedema grade\nnot charted in window\n−6 h to +24 h  |  n = %s' % format(M_ex_oed, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(30.3, 59.25, 33.3, 59.25, color=EXC_S)
+box(8, 44.5, 22, 10, 'Oedema grade documented\nn = %s (69.1%%)' % format(n_oed, ','), DEV_F, DEV_S, fs=7.4)
 arrow(LC, 44.5, LC, 41)
-box(34, 39.5, 16, 8.5, 'Excluded: capillary refill\nnot charted in window\nn = %s' % format(M_ex_crt, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
-arrow(33, 45.5, 34, 43.8, color=EXC_S)
-box(8, 28, 25, 11, 'Primary analysis set\nn = %s (57.9%%)\ndeaths 758 (6.29%%)' % format(M4, ','), '#E6F1FB', DEV_S, fs=8.0)
+box(33.5, 39.5, 16, 8.5, 'Excluded: capillary refill\nnot charted in window\nn = %s' % format(M_ex_crt, ','), EXC_F, EXC_S, fs=6.8, bold_first=False)
+arrow(30.3, 43.75, 33.3, 43.75, color=EXC_S)
+box(8, 28, 22, 11, 'Primary analysis set\nn = %s (57.9%%)\ndeaths 758 (6.29%%)' % format(M4, ','), '#E6F1FB', DEV_S, fs=8.0)
 
 # --- right column ---
 box(59, 87, 36, 8, 'All unit stays\nn = %s  |  208 hospitals' % format(E1, ','), 'white', LINE, fs=7.8)
@@ -196,24 +196,5 @@ im = Image.open(OUT + '/GraphicalAbstract.png').convert('RGB')
 im.save(JCM + '/Graphical_Abstract.tif', 'TIFF', compression='tiff_lzw', dpi=(300, 300))
 print('saved GraphicalAbstract.png', im.size, '-> tif')
 
-# ---------------- 图号重排 ----------------
-rename = {'Fig1_quadrant_gradient': 'Fig2_quadrant_gradient',
-          'Fig2_edema_cr': 'Fig3_edema_cr',
-          'Fig3_edema_grade': 'Fig4_edema_grade',
-          'Fig4_ROC': 'Fig5_ROC',
-          'Fig5_calibration': 'Fig6_calibration',
-          'Fig6_DCA': 'Fig7_DCA',
-          'Fig7_trajectory': 'Fig8_trajectory',
-          'Fig8_forest_OR': 'Fig9_forest_OR',
-          'Fig9_SHAP': 'Fig10_SHAP'}
-for old, new in rename.items():
-    for ext in ['.png']:
-        s = OUT + '/' + old + ext
-        if os.path.exists(s):
-            shutil.copy2(s, OUT + '/' + new + ext)
-for old, new in rename.items():
-    s = OUT + '/figures_TIFF600/' + old + '_600dpi.tif'
-    if os.path.exists(s):
-        shutil.copy2(s, OUT + '/figures_TIFF600/' + new + '_600dpi.tif')
-print('\nrenumbered figures done')
-print(sorted(os.listdir(OUT)))
+# 图号重排由 jcm_fig_renumber.py 单独执行（最终编号见该脚本 MAP），此处不再内嵌旧方案
+

@@ -110,7 +110,7 @@ m1=sm.Logit(yv, sm.add_constant(Zb[cols])).fit(disp=0)
 m2=sm.Logit(yv, sm.add_constant(pd.concat([Zb[cols],DUM],axis=1))).fit(disp=0)
 p1=m1.predict(sm.add_constant(Zb[cols])).values; p2=m2.predict(sm.add_constant(pd.concat([Zb[cols],DUM],axis=1))).values
 
-fig, ax = plt.subplots(figsize=(3.4,3.3))
+fig, ax = plt.subplots(figsize=(4.0,3.9))
 for p,lab,col in [(p1,'Routine variables only (AUC %.3f)'%auc(yv,p1),CGRY),(p2,'+ congestion–perfusion phenotype (AUC %.3f)'%auc(yv,p2),CRED)]:
     o=np.argsort(-p); yy=yv[o]; tpr=np.cumsum(yy)/yy.sum(); fpr=np.cumsum(1-yy)/(1-yy).sum()
     ax.plot(np.r_[0,fpr], np.r_[0,tpr], color=col, lw=1.6, label=lab)
@@ -159,7 +159,7 @@ def nb(y,p,t):
     y=np.asarray(y); n=len(y); tp=((p>=t)&(y==1)).sum()/n; fp=((p>=t)&(y==0)).sum()/n
     return tp-fp*t/(1-t)
 ths=np.arange(0.01,0.31,0.005)
-fig, ax = plt.subplots(figsize=(3.4,3.0))
+fig, ax = plt.subplots(figsize=(4.0,3.5))
 ax.plot(ths,[nb(yv,p2,t) for t in ths], color=CRED, lw=1.6, label='Model (routine + phenotype)')
 ax.plot(ths,[nb(yv,p1,t) for t in ths], color=CGRY, lw=1.4, ls='--', label='Routine variables only')
 ax.plot(ths,[nb(yv,np.ones_like(p2),t) for t in ths], color='k', lw=0.9, ls=':', label='Treat all')
@@ -192,8 +192,8 @@ cols=[CBLU,'#7FA8C9',CRED,'#7A1F1F']
 for i,o in enumerate(order):
     ax.plot([0,1],[prof.loc[o,'g_early'],prof.loc[o,'g_late']],'o-',color=cols[i],lw=1.8,ms=4,label=o)
 ax.set_xticks([0,1]); ax.set_xticklabels(['0–24 h','24–72 h'])
-ax.set_ylabel('Mean oedema grade'); ax.set_ylim(0,4.5)
-ax.legend(frameon=False, fontsize=7.5); ax.set_title('A  Congestion trajectory groups', fontsize=8.5, loc='left')
+ax.set_ylabel('Mean oedema grade'); ax.set_ylim(0,5.2)
+ax.legend(frameon=False, fontsize=7.5, loc='upper left'); ax.set_title('A  Congestion trajectory groups', fontsize=8.5, loc='left')
 ax=axs[1]
 ax.bar(range(4), tab.pct.values, color=cols)
 for i,(v,n) in enumerate(zip(tab.pct.values, tab.n.values)):
@@ -206,7 +206,7 @@ plt.tight_layout(); plt.savefig(FIG+'/Fig7_trajectory.png', dpi=400); plt.close(
 # ---------- Fig 8 森林图 ----------
 tb=m2.summary2().tables[1]
 items=[('Wet-warm vs dry-warm','WetWarm'),('Dry-cold vs dry-warm','DryCold'),('Wet-cold vs dry-warm','WetCold')]
-fig, ax = plt.subplots(figsize=(4.2,2.2))
+fig, ax = plt.subplots(figsize=(5.4,2.4))
 for i,(lab,k) in enumerate(items):
     co,se=tb.loc[k,'Coef.'],tb.loc[k,'Std.Err.']; orv=np.exp(co)
     ax.plot([np.exp(co-1.96*se),np.exp(co+1.96*se)],[i,i],color=CRED,lw=1.6)

@@ -50,7 +50,12 @@ for i,(o,lo,hi) in enumerate(ors):
     ax.plot(o,i,'s', color='#B23A3A' if i>=3 else '#2F5D8A', ms=5.5)
 ax.axvline(1,color='k',lw=0.8,ls='--')
 ax.set_yticks(xs); ax.set_yticklabels(['0 (ref)']+lab[1:], fontsize=7.5)
-ax.set_xscale('log'); ax.set_xlim(0.5,5); ax.set_xlabel('Adjusted odds ratio (95% CI)', fontsize=8)
+ax.set_xscale('log'); ax.set_xlim(0.5,5.2)
+import matplotlib.ticker as mticker
+ax.xaxis.set_major_locator(mticker.FixedLocator([0.6,1,2,3,4,5]))
+ax.xaxis.set_major_formatter(mticker.FixedFormatter(['0.6','1','2','3','4','5']))
+ax.xaxis.set_minor_locator(mticker.NullLocator())
+ax.set_xlabel('Adjusted odds ratio (95% CI)', fontsize=8)
 ax.set_title('B  Multivariable-adjusted OR by grade', fontsize=8.5, loc='left')
 plt.tight_layout(); plt.savefig(FIG+'/Fig3_edema_grade.png', dpi=400); plt.close()
 os.remove(FIG+'/Fig3_RCS.png')

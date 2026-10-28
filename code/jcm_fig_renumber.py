@@ -22,15 +22,20 @@ for d in (TMP, SUP, TIF, JCMFIG):
 
 # 主图 9 张：中间名 → 最终名
 MAP = {
+    # 键 = 生成脚本的实际中间名；值 = 最终稿编号
+    # figures_cp.py: Fig1_quadrant_gradient Fig2_edema_cr Fig4_ROC Fig5_calibration
+    #                Fig6_DCA Fig7_trajectory Fig8_forest_OR
+    # fig3_redo.py : Fig3_edema_grade
+    # jcm_figures.py: Fig1_participant_flow
     'Fig1_participant_flow': 'Fig1_participant_flow',
-    'Fig2_quadrant_gradient': 'Fig2_quadrant_gradient',
-    'Fig4_edema_grade': 'Fig4_edema_grade',
-    'Fig9_forest_OR': 'Fig3_forest_OR',
-    'Fig3_edema_cr': 'Fig5_edema_cr',
-    'Fig5_ROC': 'Fig6_ROC',
-    'Fig6_calibration': 'Fig7_calibration',
-    'Fig7_DCA': 'Fig8_DCA',
-    'Fig8_trajectory': 'Fig9_trajectory',
+    'Fig1_quadrant_gradient': 'Fig2_quadrant_gradient',
+    'Fig3_edema_grade': 'Fig4_edema_grade',
+    'Fig8_forest_OR': 'Fig3_forest_OR',
+    'Fig2_edema_cr': 'Fig5_edema_cr',
+    'Fig4_ROC': 'Fig6_ROC',
+    'Fig5_calibration': 'Fig7_calibration',
+    'Fig6_DCA': 'Fig8_DCA',
+    'Fig7_trajectory': 'Fig9_trajectory',
 }
 # 补充图：SHAP 从主图序列移出
 SUPMAP = ['Fig10_SHAP', 'Fig9_SHAP']
@@ -45,6 +50,8 @@ for old, new in MAP.items():
             src = p; break
     if src is None:
         missing.append(new); continue
+    if src.endswith('/' + new + '.png') and old != new:
+        print('  !! WARNING: 中间名 %s.png 不存在，回退用了已有成品（可能为旧图）' % old)
     shutil.copy2(src, TMP + '/' + new + '.png'); made.append(new)
 print('主图 staged:', len(made), '/', len(MAP), '| missing:', missing)
 assert not missing, '缺少图件，重排已中止（未删除任何文件）：%s' % missing
@@ -81,7 +88,10 @@ if victims:
     print('recycle code', recycle(victims))
 for new in sorted(made):
     shutil.copy2(TMP + '/' + new + '.png', OUT + '/' + new + '.png')
-shutil.copy2(sup_src, SUP + '/FigureS1_SHAP.png')
+try:
+    shutil.copy2(sup_src, SUP + '/FigureS1_SHAP.png')
+except PermissionError as e:
+    print('  !! 补充图被占用，跳过覆盖（保留旧版）:', e)
 for f in os.listdir(TMP):
     os.remove(TMP + '/' + f)
 os.rmdir(TMP)
