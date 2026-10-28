@@ -113,7 +113,7 @@ Four extraction issues were resolved during the analysis and are handled explici
 
 ## How to cite
 
-If you use this code or these aggregate results, please cite the archived release rather than the moving repository tip. The concept DOI below always resolves to the latest version; the version-specific DOI of the release cited in the manuscript is `10.5281/zenodo.23310937` (v1.0.0).
+If you use this code or these aggregate results, please cite the archived release rather than the moving repository tip. The concept DOI below always resolves to the latest version; the version-specific DOI of the current release is `10.5281/zenodo.23720034` (v1.1.0); the earlier archive of v1.0.0 is `10.5281/zenodo.23310937`.
 
 ```
 Miao Q, Cen J, Chen L, Lu R, Zhang R. Analysis code and aggregate results:
